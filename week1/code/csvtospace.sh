@@ -12,6 +12,7 @@ if [ ! -f "$1" ];then
   echo "error"
 exit
 else
-  cat $1 | tr -s "," "\t" > "new$1".csv
+  touch ../data/new.csv
+  cat $1 | tr -s "," "\t" >> new.csv
   echo "Done!"
 fi
