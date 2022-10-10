@@ -1,5 +1,0 @@
-#1 wc ../data/407228326.fasta ../data/407228412.fasta ../data/E.coli.fasta
-#2 sed -n '2,' ../data/E.coli.fasta
-#3 wc -m ../data/E.coli.fasta
-#4 sed -i '1d' ../data/E.coli.fasta && cat ../data/E.coli.fasta | tr -s '\t' && grep -o -i "ATGC" ../data/E.coli.fasta | wc -l
-#5 echo `awk 'BEGIN{printf "%.1f%%\n",('$(grep -o -i "AT" ../data/E.coli.fasta |wc -l)'/'$(grep -o -i "CG" ../data/E.coli.fasta |wc -l)'+'$(grep -o -i "TA" ../data/E.coli.fasta |wc -l)'/'$(grep -o -i "CG" ../data/E.coli.fasta |wc -l)')*100}'`
