@@ -7,12 +7,13 @@
 # Arguments: 1 -> tab delimited file
 # Date: Oct 2022
 
-echo "Creating a space separated version of $1 ..."
-if [ ! -f "$1" ];then
-  echo "error"
+if [[ -z "$1" ]] ;then
+  printf '%s\n' "No input"
 exit
 else
+  echo "Creating a space separated version of $1 ..."
   touch ../data/new.csv
   cat $1 | tr -s "," "\t" >> new.csv
   echo "Done!"
+  exit
 fi
