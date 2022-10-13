@@ -1,7 +1,7 @@
 #!/bin/bash
 # Author: shiyuan sh422@ic.ac.uk
 # Script: csvtospace.sh
-# Description: substitute commas in the files space 
+# Description: substitute commas in the files  
 #
 # Save the output into a a space separated .txt file
 # Arguments: 1 -> txt delimited file
