@@ -9,7 +9,7 @@ tail -n +2 ../data/fasta/E.coli.fasta
 tail -n +2 ../data/fasta/E.coli.fasta | tr -d "\n" | wc -c
 
 #4 Count the matches of "ATCG"
-tail -n +2 ../data/fasta/E.coli.fasta | tr -d "\n\r" | grep -o ATGC | wc -l
+tail -n +2 ../data/fasta/E.coli.fasta | tr -d "\n" | grep -o ATGC | wc -l
 
 #5 Compute AT/CG ratio
 echo  $(grep -o [A,T] ../data/fasta/E.coli.fasta | wc -l) / $(grep -o [G,C] ../data/fasta/E.coli.fasta | wc -l) | bc -l
