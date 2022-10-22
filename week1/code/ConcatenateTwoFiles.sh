@@ -6,10 +6,10 @@
 # Date: Oct.2022
 
 
-if [ -z "$1" || -z "$2" ];then
-  echo "Please enter two files"
+if [ -z "$1" -o -z "$2" ];then
+  echo "Please enter two files as your input"
 elif [ -z "$3" ];then
-  echo "Please enter a name for your merged file"
+  echo "Please enter your output file"
 else  
   cat $1 > $3
   cat $2 >> $3
