@@ -4,6 +4,6 @@
 __pycache__
 */sandbox
 **/results/*
-**/results/.gitkeep
+!**/results/.gitkeep
 **/sandbox/*
-**/sandbox/.gitkeep
+!**/sandbox/.gitkeep
