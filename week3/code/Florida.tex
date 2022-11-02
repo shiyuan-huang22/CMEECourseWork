@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{float}
+
+\title{Is Florida getting warming?}
+
+\author{Shiyuan Huang}
+
+\date{\today}
+
+\begin{document}
+  \maketitle
+
+  \section{Introduction}
+    This article investigated whether the tempearture in Florida correlated with time for successive years. 
+    The null hypothesis is tempearture in Florida do not significantly correlate with time for successive year. The alternative hypothesis is tempearture correlates with time in Florida.
+
+    However, using the standard p-values calculated for the correlation coefficients is not good because successive points in time in a time series are not independent of the measurement of the climate variables.
+    Therefore permutation analysis by generating a distribution of random correlation coefficients and comparing observed coefficients with this random distribution.
+
+  \section{Results}
+    To determine if there was a positive correlation between year and temperature in Florida ,the correlation coefficient of 0.5331784 was obtained for the temperature data in 20th century.
+    Then 1000 shuffled populations were analysed in permutations to calculate the fraction of the random correlation coefficients were greater than the observed one to determine an approximate, asymptotic,  p-value. Which is 0.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{../results/FloridaPlot1.pdf}
+    \caption{Temperature over time}
+    \end{figure}
+        
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{../results/FloridaPlot3.pdf}
+    \caption{Random Correalation Coefficients}
+    \end{figure}
+        
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{../results/FloridaPlot2.pdf}
+    \caption{Histogram of Random Correlation Coefficients}
+    \end{figure}
+
+\section{Discussion}
+We found that the p-value is below 0.05, then reject the null hypothesis "Tempearture in Florida do not significantly correlate with time for successive year". We can say the positive correlation shown between year and temperature in Florida is statistically significant.
+These results suggest that temperatures in Florida increased throughout the 20th century.
+
+\end{document}

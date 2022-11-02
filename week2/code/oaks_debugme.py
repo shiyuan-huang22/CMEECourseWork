@@ -24,7 +24,9 @@ def main(argv):
     g = open('../data/JustOaksData.csv','w')
     taxa = csv.reader(f)
     csvwrite = csv.writer(g)
-    oaks = set()
+    csvwrite.writerow(["Genus","Species"])
+    next(taxa,None) # Skip header
+
     for row in taxa:
         print(row)
         print ("The genus is: ") 

@@ -1,5 +1,9 @@
 *~ 
 *.tmp
 *.log
-
+__pycache__
 */sandbox
+**/results/*
+**/results/.gitkeep
+**/sandbox/*
+**/sandbox/.gitkeep
