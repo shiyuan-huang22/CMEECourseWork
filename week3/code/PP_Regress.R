@@ -37,7 +37,7 @@ mydf2 =  MyDF %>%
                   
 x = seq(1:length(mydf2$estimate)) # nolint
 even = subset(x, x %% 2 == 0)                 
-odd = subset(x, x %%2 == 1)
+odd = subset(x, x %% 2 == 1)
 
 output = data.frame(
 mydf1$Type.of.feeding.interaction,
@@ -50,7 +50,3 @@ p.value = mydf1$p.value
 )
 
 write.csv(output, "../results/PP_Regress_Results.csv", row.names = F)
-
-
-
-
