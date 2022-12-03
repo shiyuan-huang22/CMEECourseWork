@@ -1,0 +1,9 @@
+code/.Rhistory
+code/.RData
+code/*.pdf
+.Rhistory
+.RData
+data/ModiData.csv
+results/*.pdf
+results/*.csv
+sandbox

@@ -1,0 +1,185 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{lineno}
+\usepackage{float} 
+\usepackage{authblk} 
+\usepackage{caption}  
+\usepackage{subcaption}
+\usepackage[onehalfspacing]{setspace}
+
+
+\title{Advantages of Mechanistic Models over Polynomial Models for Prediction of Microbial Growth}
+\author{Shiyuan Huang (sh422@ic.ac.uk)}
+\affil{Imperial College London}
+\date{}
+
+\begin{document}
+    
+    \begin{titlepage}
+      \maketitle
+      
+    \begin{center}
+        Word count: 2178
+    \end{center}
+    
+    \end{titlepage}
+
+    \begin{linenumbers}
+    
+    \pagebreak
+
+    \begin{abstract}
+        
+    Prediction of microbial growth is very important in the field of food production. An increasing popular method nowadays is mathematical modelling. In this study, 285 sets of microbial growth data were analysed by using 2 mechanistic models and 2 polynomial models to quantify the process of microbial growth. The 4 models were Quadratic polynomial model, Cubic polynomial model, Logistic model, Gompertz model. I used Akaike information criterion(AIC), Akaike weight, Bayesian information criterion(BIC), and R squared to compare the fit of the four models. It was found that the Logistic model had the lowest AICc and BIC values of the four models the most frequently, while the mean value of Akaike weight and R squared was higher. The results of the study showed that the logistic model would be the best model and the mechanistic model performed better than the polynomial model overall. But the mechanistic model also suffered from poor performance in fitting the microbial death phase. Therefore we should consider improving the performance of the mechanistic model in the death phase. However mechanistic models are still very good options if in the field of food microbiology.
+
+    \end{abstract}
+
+    \section{Introduction}
+
+    The study of microbes is a topic that never goes out of date in the food field. Let's think about it. Fresh balsa can being your delicious dinner, however spoiled balsa can give off an unbearable stench, then what is the cause of food spoilage? Inherent enzymes and chemical reactions lead to the initial loss of seafood quality, however, the metabolic activity of microorganisms is the main cause of seafood deterioration \cite{sriket2014proteases}. As a further example, leafy vegetables are an important part of our daily salads, but animals without any disease traits often excrete food-borne pathogens that act as carriers of pathogens such as Salmonella, which affects leafy vegetables. The reality is that it is very difficult to control the contamination of crops by animals such as frogs \cite{gil2015pre}. This shows the "powerful influence" of microbes in the food field. When we consider the issue of food safety, it is easy to see that food poisoning is a common occurrence in our daily lives. The common reason for food poisoning, is the spoilage of food due to the growth of microbes involving pathogens. Therefore, over the years, there has been a great amount of research into the growth modes of microbes and the factors that may affect their growth, and many mathematical models have been developed to describe microbial growth \cite{peleg2011microbial}. In microbiology, mathematical models can be classified as either mechanistic or phenomenological, although the boundaries between them are blurred but they have their own focus. Mechanistic models aim to find the motivation for microbial behaviour, whereas phenomenological models aim to quantify and fit microbial behaviour more precisely \cite{ferrer2009mathematical}.
+    I defined the two polynomial models, quadratic and cubic as simple phenomenological models and the logistic and gompertz models as classical mechanistic models in this study. Based on the investigation of microbial growth data, I would investigate two typical polynomial models and two mechanistic models to attempt to determine which model would be a better fit.
+
+    \section{Methods}
+     
+      \subsection{Data}
+
+    The data used in this study are in LogisticGrowthData.csv where the interpretation of the data is in LogisticGrowthMetaData.csv. The data consists of a collection of 285 sets of data on bacterial growth from 10 sources. Of these, PopBio has 4 units, they were $OD\_595$, $N$, $CFU$, $DryWeight$. I deleted all observations with negative time, which would improve the fit of the models. I also deleted all observations with a negative PopBio because they were not biologically meaningful. 285 sets of data corresponded to 285 IDs(Numeric IDs will be more easily distinguishable than texts), where the IDs consisted of a combination of Temperature - Species - Medium - Citation. Furthermore I calculated the log value of PopBio, which will be used in the Gompertz model.
+
+      \subsection{Mathematical Model}
+
+    Four mathematical models were used in this study:  Quadratic polynomial model, Cubic polynomial model, Logistic model, Gompertz model.
+
+    Quadratic polynomial model
+      \begin{equation} PopBio(T) = A_0 + A_1 T + A_2 T^2  \end{equation}
+    Cubic polynomial model
+      \begin{equation} PopBio(T) = A_0 + A_1 T + A_2 T^2 + A_3 T^3  \end{equation} 
+    Logistic model
+      \begin{equation} PopBio(T) = \frac{N_0 K e^{r_{max} t}}{K+N_0(e^{r_{max}} t - 1)}  \end{equation} 
+    Modified Gompertz model \cite{zwietering1990modeling}
+      \begin{equation} LogPopBio(T) = N_O + (K - N_0) e^{-e^{\frac{r_{max}  e^1  (t_{lag} - T)}{(K - N_0)  log(10)} + 1 }}  \end{equation}
+
+    For parameters used in Logistic model and Gompertz model: $N_0$ is initial population size, $r_{max}$ is maximum growth rate, and $K$ is carrying capacity (maximum possible abundance of the population). $t_{lag}$ is the duration of the delay before the population starts growing exponentially.
+
+      \subsection{Model Fitting}
+
+    I used the $lm()$ function in R to fit a linear model to the data and for the non-linear model I used Non-Linear Least Squares(By $nlsLM$ function in minpack.lm in R). In the NLLS model fitting, starting values for parameters $r$, $K$, $N_0$, $t_{lag}$ were estimated in every dataset of special ID. where $N_0{start}$ is the minimum value of the population and $K_{start}$ is the maximum value of the population. $r_{maxstart}$ is the slope of the simple linear model. $t_{lag}$ is the time which the maximum population difference occurs. For the Gompertz model I used parameter sampling to avoid falling into local minimums that would cause the fitting to fail(Why logistic model fitting did not use parameter sampling? I had tried it and the conclusion was that the model fitted better without parameter sampling.). For each ID dataset I set a time series of 500 time points and used these to calculate the PopBio values for the corresponding model for the plot(More uniformly distributed time points will produce smoother and more beautiful curves). For the Gompertz model in log scale I chose to take the exponential values of the simulation points, so that the Gompertz model and other models could be plotted on the same graph in linear scale.
+
+      \subsection{Model Comparison}
+
+    In this study, AICc, Akaike weight, BIC and R squared were used to evaluate the model fits. In order to compare these four models in a uniform criterion, I defined the $NonLogRSS$ function in $stat\_cal.R$. This function is used to calculate the residuals of the Gompertz model in the linaer scale. For other models I defined function $LMRSS$ to calculate residuals. And to calculate AICc value, I used the $MyAICc$ function. These ensure that the residuals are calculated in a uniform scale so that the results are comparable. Since most of the data subsets in this study had small sample sizes, I chose AICc. Because when sample sizes are small, AIC are likely to select models with too many parameters, i.e. the AIC will overfit. This potential overfitting is solved by AICc, which is an AIC corrected for small sample sizes. Please see the following equation:
+
+    Akaike information criterion (AIC)
+      \begin{equation}
+        AIC = n + 2 + n log(\frac{2 pi}{n}) + n log(RSS) + 2 p
+      \end{equation}
+      
+      \begin{equation}
+        AICc = AIC + \frac{2 P (P + 1)}{n - P - 1}
+      \end{equation}
+
+    Akaike weight
+      \begin{equation}
+        \Delta AIC_i = AIC_i - AIC_{min}
+      \end{equation}
+      \begin{equation}
+        W_i = \frac{exp(-0.5 \Delta AIC_i)}{\sum_{J=i}^R exp(-0.5 \Delta AIC_i)}
+      \end{equation}
+
+    This fraction we get is the Akaike weight, which is the relative weight of each model. We can interpret the Akaike weight in this way, the probability of model i being the best model among the candidate models. They also provide a relative importance that can be calculated as the sum of the Akaike weight of all models \cite{johnson2004model}.
+
+    Bayesian information criterion (BIC)
+      \begin{equation} 
+        BIC = n + 2 + n log(\frac{2 pi}{n}) + n log(RSS) + P log(n) 
+      \end{equation} 
+
+    n is the simple size, p is the number of parametes in the model, and RSS is the residuals. This study will consider AICc, Akaike weight, BIC, and R squared simultaneously . The strategy is:
+    The minimum values of AICc and BIC in each group of IDs were counted and the model with the minimum value was considered to be the best model. If there were other models in the group with values of AICc and BIC that did not exceed the minimum value of 2, that model was also counted as the best model. And I would also calculate Akaike weight of each model then find their average values. Model which would get Akaike weight over 0.9 will be considered the best \cite{johnson2004model}. The boxplot of R squared for each model is then plotted for comparison and the number of times that the value of R squared for each model exceeds 0.9 is counted.
+
+      \subsection{Computing Languages and Tools}
+
+    As R is very convenient for data exploration, model fitting and plotting, and the size of the Miniproject data is not very large, I chose R as the main tool for data exploration, model fitting and visualisation, as well as for AIC, Akaike weight, BIC and R squared calculations.Package $minpack.lm$ was used for NLLS model fitting. And I chose Package $ggplot2$ in R to make nice visualisation of model fitting. LaTeX was used for scientific writing. The shell script is used as a workflow control tool and can run the entire Miniproject directly.
+
+      \section{Results}
+
+      \subsection{Model Fitting Plot}
+
+    I successfully obtained 285 figures, which I saved in a file called $Modelfitting\_plot.pdf$. I would showe 2 fitting scenarios in the following.
+
+     
+      \begin{figure}[H]
+        \centering
+        \begin{subfigure}[a]{0.5\textwidth}
+          \centering
+          \includegraphics[width=\textwidth, page = 2]{../results/Modelfitting_plot.pdf}
+          \caption{}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[a]{0.5\textwidth}
+          \centering
+          \includegraphics[width=\textwidth, page = 283]{../results/Modelfitting_plot.pdf}
+          \caption{}
+        \end{subfigure}
+      \caption{(a)This figure indicates that the Logistic model and Gompertz model fit poorly in the death phase and that they stay in the stationary phase.(b)This figure shows that the Quadratic model and Cubic model are poorly fitted in the lag phase.}
+      \end{figure}
+
+      \newpage
+      
+      \subsection{AICc and BIC}
+    According to the results of the AICc and BIC calculations, the Logistic model became the best model most frequently (AICc: 188 times, BIC: 190 times), followed by the Cubic model (AICc: 133 times, BIC: 118 times). The Quadratic model and Gompertz model performed the same (both AICc:40, BIC:42). 
+    
+      \begin{figure}[H]
+        \centering
+        \begin{subfigure}[a]{0.5\textwidth}
+          \centering
+          \includegraphics[width=\textwidth]{../results/AICc_plot.pdf}
+          \caption{}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[a]{0.5\textwidth}
+          \centering
+          \includegraphics[width=\textwidth]{../results/BIC_plot.pdf}
+          \caption{}
+        \end{subfigure}
+      \caption{(a)AICc Best model count, (b)BIC Best model count}  
+      \end{figure}
+      
+      \newpage
+      \subsection{Akaike weight}
+
+    Mean of Akaike weight:
+
+    Quadratic model:0.3809;  Cubic model:0.6516;  Logistic model:0.7735; Gompertz model:0.3809  
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{../results/Akaike_weight.pdf}
+        \caption{Akaike weight of 4 models}
+      \end{figure}
+     
+      \subsection{R squared}
+
+    Then we check the R squared for each model, as follows.
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.5]{../results/R2_plot.pdf}
+        \caption{R squared results}
+      \end{figure}
+
+    According to the graph we saw that the highest overall performance was Logistic model, followed by Cubic model, Gompertz model and Quadratic model which were very close to each other. The number of times the R squared of each model exceeded 0.9 was: Quadratic model: 161, Cubic model: 215, Logistic model: 204 and Gompertz model: 161.
+      
+      \section{Discussion}
+      
+    To find the best mathematical model of microbial growth, two polynomial models and two mechanistic models were fitted. The Quadratic model and Cubic model were polynomial models and the Logistic model and Gompertz model were mechanistic models. Let's consider 2 mechanistic models first. We can see that, the Gompertz model did not perform well in this study(with the minimum counts of best model), probably because I calculated AICc, Akaike weight, BIC, R squared in linear scale, and the lag phase had less weight, so the Gompertz model would enter the exponential growth phase more slowly. The literature supports the idea that gompertz will perform better when it returns to logarithmic space \cite{zwietering1990modeling}. In contrast, the logistic model will enter the exponential growth phase directly (Figure 1(a)). Thus in the linear scale, the Logistic model performs better than the Gompertz model. For the polynomial model, the Cubic model performs better than the Quadratic model, probably because the Cubic model has one extra cubic variable than the Quadratic model, allowing it to perform better in explaining the variation of microbial growth processes. Then we compare the polynomial model and the mechanistic model. According to the results of AICc, Akaike weight, BIC,R squared, the mechanistic model performs slightly better than the polynomial model. Firstly the Logistic model performs slightly better than the Cubic model, a model can be the best model if the Akaike weight over 0.9 \cite{johnson2004model}, but the mean of Akaike weight of Logistic model is about 0.77,it is only 1.18 times of Cubic model. Then the Gompertz model and the Quadratic model perform close to each other ,considering that this study was in linear scale, which led to a worse performance of the Gompertz model. So I would say that the Gompertz model performs better in the log scale. We could also compare the relative likelihood of one set of models outperforming another by grouping the models and calculating Akaike weight of groups \cite{wagenmakers2004aic}. Now we calculated mean Akaike weight of mechanistic models and polynomial models, mechanistic is 1.12 times of polynomial, slightly better. Finally, let's consider the information that the model-fitted figures brings us, the mechanistic model fits poorly in the death phase. Thus, when considering the lag phase, exponential growth phase and stationary phase of microbial growth, the mechanistic model is overwhelmingly superior. However, the performance of the mechanistic model becomes poorer when the death phase of the microorganism is considered. But when we come back to the issue of food safety, it seems that a mechanistic model is the better choice. This is because most of the food we eat in our daily lives becomes unsafe for consumption or even inedible before the microorganisms have died in large numbers of cells, or even before the stationary phase. This is why most food microbiology studies choose to investigate the first three phases of the model and ignore the death phase \cite{peleg2011microbial}. The victory of the Logistic model becomes more meaningful when the death phase is ignored. But the logistic model also has the disadvantage of not being able to interpret log lags, and we should consider a model like the Gompertz model as the first choice when we consider modelling with such growth curves. Thus we can say that our best model will change depending on our purpose and that the advantages and limitations of the chosen model should be fully considered when mathematical modelling of microbial growth models is considered.
+      
+    The results of this study showed that the mechanistic model has some advantages over the polynomial in fitting the microbial growth process, but not overwhelmingly so. Although much effort has been put into studying microbial growth models and many different non-linear equations have been used, none of them can be regarded as absolutely optimal in nature \cite{lopez2004statistical}. In future research on mechanistic models, we should focus on improving the mechanistic models, especially in the direction of predicting microbial death phases.However, in areas such as food safety, where the microbial death phase is ignored, mechanistic models still have some distinct advantages.
+
+    \bibliographystyle{apalike}
+
+    \bibliography{ref}
+
+    \end{linenumbers}
+
+
+\end{document}
+
