@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+__appname__ = 'lc2.py'
+__author__ = 'Shiyuan Huang (sh422@ic.ac.uk)'
+__version__ = '0.0.1'
+__license__ = ""
+
+"""Use comprehensions and loops to list rainfall data"""
+
 # Average UK Rainfall (mm) for 1910 by month
 # http://www.metoffice.gov.uk/climate/uk/datasets
 rainfall = (('JAN',111.4),

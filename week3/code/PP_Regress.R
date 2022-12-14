@@ -14,13 +14,13 @@ MyDF$Prey.mass[which(MyDF$Prey.mass.unit == "mg")] <- MyDF$Prey.mass[which(MyDF$
 
 # plot predator mass against prey mass by type of feeding and predator lifestage
 pdf("../results/PP_Regress_Plots.pdf")
-p = ggplot(MyDF, aes(x = Prey.mass, y = Predator.mass, colour = Predator.lifestage), geom_point(shape=I(3))) + 
-    geom_smooth(method = "lm", fullrange=TRUE) + 
-    geom_point(pch=3) + 
-    facet_wrap( Type.of.feeding.interaction ~ ., ncol=1 ) +
+p = ggplot(MyDF, aes(x = Prey.mass, y = Predator.mass, colour = Predator.lifestage)) + 
+    geom_smooth(method = "lm", fullrange = TRUE, size = 0.7) + 
+    geom_point(size = 0.5, pch = 3) + 
+    facet_wrap( Type.of.feeding.interaction ~ ., ncol = 1) +
     scale_x_log10() + scale_y_log10() + 
     theme(legend.position = "bottom", aspect.ratio = 0.5) +
-    guides(color = guide_legend(nrow=1))
+    guides(color = guide_legend(nrow = 1))
 print(p)
 graphics.off()
 
@@ -29,17 +29,17 @@ MyDF$Type.of.feeding.interaction <- as.factor(MyDF$Type.of.feeding.interaction)
 MyDF$Predator.lifestage <- as.factor(MyDF$Predator.lifestage)
 
 mydf1 =  MyDF %>% 
-        group_by(Type.of.feeding.interaction,Predator.lifestage) %>%
-        do(glance(lm(log(Predator.mass) ~ log(Prey.mass),data = .)))
+        group_by(Type.of.feeding.interaction, Predator.lifestage) %>%
+        do(glance(lm(Predator.mass ~ Prey.mass, data = .)))
 mydf2 =  MyDF %>% 
-        group_by(Type.of.feeding.interaction,Predator.lifestage) %>%
-        do(tidy(lm(log(Predator.mass) ~ log(Prey.mass),data = .)))
-                  
-x = seq(1:length(mydf2$estimate)) # nolint
-even = subset(x, x %% 2 == 0)                 
+        group_by(Type.of.feeding.interaction, Predator.lifestage) %>%
+        do(tidy(lm(Predator.mass ~ Prey.mass, data = .)))
+
+x = seq(1:length(mydf2$estimate)) # Generate even and odd number subset as the index of slope and intercept
+even = subset(x, x %% 2 == 0)
 odd = subset(x, x %% 2 == 1)
 
-output = data.frame(
+output <- data.frame(
 mydf1$Type.of.feeding.interaction,
 mydf1$Predator.lifestage,
 slope = mydf2$estimate[even],

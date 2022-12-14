@@ -5,7 +5,7 @@ the structure of a python programme"""
 __appname__ = 'boilerplate.py'
 __author__  = 'Shiyuan (sh422@ic.ac.uk)'
 __version__ = '0.0.1'
-__license__ = "License for this code/program"
+__license__ = ""
 
 """This boilerplate.py script won't take arguments or
 output anything."""

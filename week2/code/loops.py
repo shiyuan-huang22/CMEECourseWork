@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+__appname__ = 'loops.py'
+__author__ = 'Shiyuan Huang (sh422@ic.ac.uk)'
+__version__ = '0.0.1'
+__license__ = ""
+
+"""Examples of loop(for and while)"""
+
 # FOR loops
 for i in range(5):
     print(i)

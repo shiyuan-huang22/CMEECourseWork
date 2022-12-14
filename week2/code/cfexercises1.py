@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
+
+__appname__ = 'cfexercises1.py'
 __author__ = 'Shiyuan Huang (sh422@ic.ac.uk)'
 __version__ = '0.0.1'
+__license__ = ""
 
 
 """Modified cfexercises1.all the foo_x functions taken arguments from the user 

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """"Control statements functions"""
 
-__appname__ = '[control_flow.py]'
+__appname__ = 'control_flow.py'
 __author__  = 'Shiyuan (sh422@ic.ac.uk)'
 __version__ = '0.0.1'
-__license__ = "License for this code/program"
+__license__ = ""
 
 ## imports ##
 import sys #module to interface our program with the operating system

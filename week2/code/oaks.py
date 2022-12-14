@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+__appname__ = 'oaks.py'
+__author__ = 'Shiyuan Huang (sh422@ic.ac.uk)'
+__version__ = '0.0.1'
+__license__ = ""
+
+"""Example of comprehensions"""
+
 ## Finds just those taxa that are oak trees from a list of species
 
 taxa = [ 'Quercus robur',
@@ -9,6 +16,7 @@ taxa = [ 'Quercus robur',
          'Quercus petraea',
        ]
 
+"""Function to find oaks"""
 def is_an_oak(name):
     return name.lower().startswith('quercus ')
 

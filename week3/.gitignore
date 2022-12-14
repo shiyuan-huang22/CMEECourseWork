@@ -2,3 +2,5 @@ code/.Rhistory
 code/.RData
 .Rhistory
 .RData
+results/*.csv
+results/*.pdf

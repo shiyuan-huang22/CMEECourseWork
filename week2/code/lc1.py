@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+__appname__ = 'lc1.py'
+__author__ = 'Shiyuan Huang (sh422@ic.ac.uk)'
+__version__ = '0.0.1'
+__license__ = ""
+
+"""Use list and comprehensions to list bird data"""
 
 birds = ( ('Passerculus sandwichensis','Savannah sparrow',18.7),
           ('Delichon urbica','House martin',19),

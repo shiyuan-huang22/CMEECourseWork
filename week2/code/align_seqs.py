@@ -5,6 +5,10 @@ __author__ = 'Shiyuan Huang (sh422@ic.ac.uk)'
 __version__ = '0.0.1'
 __license__ = ""
 
+
+"""Comparing two DNA sequences and returns the best match,
+ then the "score" is calculated as the total number of DNA matched."""
+ 
 ##Imports##
 import csv ; import sys
 
@@ -83,7 +87,7 @@ def main(argv):
     s1,s2,l1,l2 = length_of_seq(seq1,seq2)
     my_best_align,my_best_score = best_match(s1,s2,l1,l2)
 
-    with open("../result/mybestalignment.txt", "w") as output:
+    with open("../results/mybestalignment.txt", "w") as output:
          output.write('My best alignment is :'+ my_best_align+'\n' + 'My best score is :'+ str(my_best_score)+'\n')
 
     return 0

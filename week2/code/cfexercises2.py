@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+__appname__ = 'cfexercises2.py'
+__author__ = 'Shiyuan Huang (sh422@ic.ac.uk)'
+__version__ = '0.0.1'
+__license__ = ""
+
+"""Print Hello programme"""
 ########################
 
 """Print 'hello' to console as it find 

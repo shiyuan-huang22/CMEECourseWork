@@ -9,7 +9,7 @@ NonLogRSS <- function(n, predictions, subset) {
   return(RSS)
 }
 
-# RSS for linear scale transfor to log scale
+# RSS for linear scale.
 LMRSS <- function(n, predictions, subset) {
   
   residuals <- subset$PopBio - predictions

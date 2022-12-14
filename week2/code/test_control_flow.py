@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 
-"""Some functions exemplifying the use of control statements"""
-
-__author__ = 'Shiyuan (sh422@ic.ac.uk)'
+__appname__ = 'test_control_flow.py'
+__author__ = 'Shiyuan Huang (sh422@ic.ac.uk)'
 __version__ = '0.0.1'
+__license__ = ""
+
+"""Some functions exemplifying the use of control statements"""
 
 import sys
 import doctest # Import the doctest module
@@ -29,6 +31,7 @@ def even_or_odd(x=0):
     return f"{x} is Odd!"
 
 def main(argv): 
+    """main entry point of the program"""
     print(even_or_odd(22))
     print(even_or_odd(33))
     return 0

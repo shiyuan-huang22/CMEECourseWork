@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 
+__appname__ = 'dictionary.py'
+__author__ = 'Shiyuan Huang (sh422@ic.ac.uk)'
+__version__ = '0.0.1'
+__license__ = ""
+
+"""populate a dictionary called taxa_dic derived from
+ taxa so that it maps order names to sets of taxa."""
+
 taxa = [ ('Myotis lucifugus','Chiroptera'),
          ('Gerbillus henleyi','Rodentia',),
          ('Peromyscus crinitus', 'Rodentia'),
