@@ -1,0 +1,1082 @@
+Starting code feedback for Shiyuan, Week7
+
+Current Points = 100
+
+Note that: 
+(1) Major sections begin with a double "====" line 
+(2) Subsections begin with a single "====" line 
+(3) Code output or text file content are printed within single "*****" lines 
+
+======================================================================
+======================================================================
+Your Git repo size this week is about 12.43 MiB on disk 
+
+PART 1: Checking project workflow...
+
+Found the following directories in parent directory: .git, CMEEminiproject, week7, week3, week2, Feedback, HPC, week1
+
+Found the following files in parent directory: README.md, .gitignore
+
+Checking for key files in parent directory...
+
+Found .gitignore in parent directory, great! 
+
+Printing contents of .gitignore:
+
+**********************************************************************
+*~ 
+*.tmp
+*.log
+__pycache__
+*/sandbox
+**/results/*
+!**/results/.gitkeep
+**/sandbox/*
+!**/sandbox/.gitkeep
+**********************************************************************
+
+Found README in parent directory, named: README.md
+
+Printing contents of README.md:
+
+**********************************************************************
+# My CMEECoursework Repository
+
+## Description
+
+This repository contains all CMEE coursework files.
+
+## Languages
+
+Python, R, Jupyter, Latex, Shell
+
+**Installation:**
+
+To use scripts in this directory clone the repository.
+
+```bash
+git clone git@github.com:shiyuan-huang22/CMEECourseWork.git
+```
+
+## Project structure and Usage 
+
+Please check weekly README.md 
+
+## Author name and contact
+
+Name: Shiyuan Huang
+
+Email: sh422@ic.ac.uk
+
+**********************************************************************
+
+======================================================================
+Looking for the weekly directories...
+
+Found 4 weekly directories: week1, week2, week3, week7
+
+The Week7 directory will be assessed 
+
+======================================================================
+======================================================================
+PART 2: Checking weekly code and workflow...
+
+======================================================================
+Assessing WEEK7...
+
+Found the following directories: code, results, data
+
+Found the following files: README.md, .gitignore
+
+Checking for readme file in weekly directory...
+
+Found README in parent directory, named: README.md
+
+Printing contents of README.md:
+
+**********************************************************************
+# Computing Week 7
+
+## Description
+
+This directory contains all Python scripts for coursework week7.
+
+## Languages
+
+Python, R, Jupyter
+
+## Dependencies
+
+No dependencies required 
+
+**Installation:**
+
+To use scripts in this directory clone the repository.
+
+```bash
+git clone git@github.com:shiyuan-huang22/CMEECourseWork.git
+```
+
+## Project structure and Usage 
+<br/>
+
+### Data Management and Visualization: 
+
+- **fmr.R:** Plots log(field metabolic rate) against log(body mass) for the Nagy et al 1999 dataset to a file fmr.pdf.
+
+- **LV1.py:** Example of numerical integration to solve the Lotka-Volterra model and plot.
+
+- **LV2.py:** Example of numerical integration to solve the Lotka-Volterra model and plot and it takes arguments for the four LV model parameters r, a, z, e from the command line.
+
+- **MyFirstJupyterNb.ipynb:** My first example jupyter file.
+
+- **profileme.py:** Find out what slowed down the scripts.
+
+- **profileme2.py:** Find out what slowed down the scripts, and we did two things to improve the script:converted the loop to a list comprehension, and replaced the .join with an explicit string concatenation. 
+
+- **run_fmr_R.py:** This script is for running fmr.R.
+
+- **run_LV.py:** Comparing the running speed between LV1.py and LV2.py.
+
+- **test.py:** Example of numerical computing in Python.
+
+- **TestR.py:** This script is for running TestR.R
+
+- **timeitme.py:** Using timeit to test loops vs. list comprehensions to find which is faster.
+
+- **using_os.py:** This is example of using subprocess.
+
+## Author name and contact
+
+Name: Shiyuan Huang
+
+Email: sh422@ic.ac.uk
+**********************************************************************
+
+Results directory is empty - good! 
+
+Found 13 code files: using_os.py, test.py, TestR.py, LV1.py, LV2.py, profileme2.py, fmr.R, run_fmr_R.py, profileme.py, MyFirstJupyterNb.ipynb, runLV.py, TestR.R, timeitme.py
+
+======================================================================
+Testing script/code files...
+
+======================================================================
+Inspecting script file using_os.py...
+
+File contents are:
+
+**********************************************************************
+#!/usr/bin/env python3
+
+__appname__ = 'using_os.py'
+__author__ = 'Shiyuan Huang (sh422@ic.ac.uk)'
+__version__ = '0.0.1'
+__license__ = ""
+
+""" This is example of using subprocess"""
+
+# Use the subprocess.os module to get a list of files and directories 
+# in your ubuntu home directory 
+
+# Hint: look in subprocess.os and/or subprocess.os.path and/or 
+# subprocess.os.walk for helpful functions
+
+import subprocess
+
+#################################
+#~Get a list of files and 
+#~directories in your home/ that start with an uppercase 'C'
+
+# Type your code here:
+
+# Get the user's home directory.
+home = subprocess.os.path.expanduser("~")
+
+# Create a list to store the results.
+FilesDirsStartingWithC = []
+
+# Use a for loop to walk through the home directory.
+for (dir, subdir, files) in subprocess.os.walk(home):
+    for f in files:
+        if f.startswith("C"):
+            FilesDirsStartingWithC.append(f)
+    for sd in subdir:
+        if sd.startswith("C"):
+            FilesDirsStartingWithC.append(sd)
+
+
+print(FilesDirsStartingWithC[1] + " , " + FilesDirsStartingWithC[21] + " , " + FilesDirsStartingWithC[-11] + " , " + FilesDirsStartingWithC[-21] )
+print("Some files and directories in my home/ that start with an uppercase 'C' had printed, we had more in list")
+print("")
+
+#################################
+# Get files and directories in your home/ that start with either an 
+# upper or lower case 'C'
+
+# Type your code here:
+
+FilesDirsStartingWithCc = []
+
+for (dir, subdir, files) in subprocess.os.walk(home):
+    for f in files:
+        if f.startswith(("c","C")):
+            FilesDirsStartingWithCc.append(f)
+    for sd in subdir:
+        if sd.startswith(("c","C")):
+            FilesDirsStartingWithCc.append(sd)
+
+
+print(FilesDirsStartingWithCc[9] + " , " + FilesDirsStartingWithCc[2] + " , " + FilesDirsStartingWithCc[-8] + " , " + FilesDirsStartingWithCc[-2])
+print("Some files and directories in my home/ that start with either 'c' or 'C' had printed, we had more in list")
+print("")
+
+#################################
+# Get only directories in your home/ that start with either an upper or 
+#~lower case 'C' 
+
+# Type your code here:
+
+DirsStartingWithCc = []
+
+for (dir, subdir, files) in subprocess.os.walk(home):
+ 
+    for sd in subdir:
+        if sd.startswith(("c","C")):
+            DirsStartingWithCc.append(sd)
+
+
+print(DirsStartingWithCc[1] + " , " + DirsStartingWithCc[3] + " , " + DirsStartingWithCc[-11] + " , " + DirsStartingWithCc[-21])
+print("Some directories in my home/ that start with either 'c' or 'C' had printed, we had more in list")
+print("")
+**********************************************************************
+
+Testing using_os.py...
+
+using_os.py is a Python script file;
+
+checking for docstrings...
+
+Found no functions, but one docstring for the script, good
+
+Current Points = 100
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+CMEECourseWork , Compat.browser , CHANGELOG.md , Command.d.ts
+Some files and directories in my home/ that start with an uppercase 'C' had printed, we had more in list
+
+chrome-mdpkiolbdkhdjpekfbkbmhigcaggjagi-Default.desktop , cells , cdd862819a105ebd84444cb99c7fc194-le64.cache-3 , c57959a16110560c8d0fcea73374aeeb-le64.cache-3
+Some files and directories in my home/ that start with either 'c' or 'C' had printed, we had more in list
+
+cells , content-v2 , codemirror-extension , clone
+Some directories
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 6.93604s
+
+======================================================================
+Inspecting script file test.py...
+
+File contents are:
+
+**********************************************************************
+"""Example of numerical computing in Python."""
+
+__appname__ = 'test.py'
+__author__ = 'Shiyuan Huang (sh422@ic.ac.uk)'
+__version__ = '0.0.1'
+__license__ = ""
+
+import numpy as np
+a = np.array(range(5)) # a one-dimensional array
+a
+mat = np.array([[0, 1], [2, 3]])
+mat[:,0]
+mat[-1,0]
+mat[0,-2]
+np.append(mat ,[[12,12]], axis = 0)
+newRow = [[12,12]]
+mat = np.append(mat, newRow, axis = 0)
+np.delete(mat, 2 ,0)    
+mat.ravel()
+mat.reshape((6,1))
+mat.shape
+mm = np.arange(16)
+mm = mm.reshape(4,4)
+mm
+mm.transpose()
+mm + mm.transpose()
+mm // (mm + 1).transpose()
+mm.dot(mm)
+print(type(mm))
+mm = np.matrix(mm)
+mm * mm
+
+import scipy as sc
+from scipy import stats
+sc.stats.norm.rvs(size = 10)
+np.random.seed(1234)
+sc.stats.norm.rvs(size = 10)
+sc.stats.norm.rvs(size = 5, random_state = 1234)
+sc.stats.randint.rvs(0, 10, size = 7)
+
+import scipy.integrate as integrate
+y = np.array([5, 20, 18, 19, 18, 7, 4])
+import matplotlib.pylab as p
+p.plot(y)
+area = integrate.trapz(y, dx = 2)
+print("area =", area)
+area = integrate.simps(y, dx = 2)
+print("area =", area)
+
+
+**********************************************************************
+
+Testing test.py...
+
+test.py is a Python script file;
+
+checking for docstrings...
+
+Found no functions, but one docstring for the script, good
+
+Current Points = 100
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+<class 'numpy.ndarray'>
+area = 173.0
+area = 176.66666666666666
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 1.09783s
+
+======================================================================
+Inspecting script file TestR.py...
+
+File contents are:
+
+**********************************************************************
+"""This script is for running TestR.R"""
+
+__appname__ = 'TestR.py'
+__author__ = 'Shiyuan Huang (sh422@ic.ac.uk)'
+__version__ = '0.0.1'
+__license__ = ""
+
+import subprocess
+p = subprocess.Popen("Rscript --verbose TestR.R > ../results/TestR.Rout 2> ../results/TestR_errFile.Rout", shell=True).wait()
+**********************************************************************
+
+Testing TestR.py...
+
+TestR.py is a Python script file;
+
+checking for docstrings...
+
+Found no functions, but one docstring for the script, good
+
+Current Points = 100
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.20310s
+
+======================================================================
+Inspecting script file LV1.py...
+
+File contents are:
+
+**********************************************************************
+#!/usr/bin/env python3
+
+__appname__ = 'LV1.py'
+__author__ = 'Shiyuan Huang (sh422@ic.ac.uk)'
+__version__ = '0.0.1'
+__license__ = ""
+
+
+"""Example of numerical integration to solve the Lotka-Volterra model and plot"""
+
+
+import numpy as np
+import scipy as sc
+from scipy import integrate
+import matplotlib.pylab as p
+import sys
+
+
+
+def dCR_dt(pops, t=0):
+
+    """Returns the growth rate of consumer(e.g.,predator) and resource(e.g.,prey) population at given time"""
+
+    R = pops[0]
+    C = pops[1]
+    dRdt = r * R - a * R * C 
+    dCdt = -z * C + e * a * R * C
+    
+    return np.array([dRdt, dCdt])
+
+r = 1.
+a = 0.1 
+z = 1.5
+e = 0.75
+t = np.linspace(0, 15, 1000)
+R0 = 10
+C0 = 5 
+RC0 = np.array([R0, C0])
+
+
+def plot1(pops, t, r, a, z, e):
+
+  """Plot population density ~ time"""
+
+  f1 = p.figure()
+  p.plot(t, pops[:,0], 'g-', label='Resource density') # Plot
+  p.plot(t, pops[:,1]  , 'b-', label='Consumer density')
+  p.grid()
+  p.legend(loc='best')
+  p.xlabel('Time')
+  p.ylabel('Population density')
+  p.title('Consumer-Resource population dynamics')
+  return f1
+  
+
+def plot2(pops, r, a, z, e):
+
+  """Plot consumer density ~ resource density"""
+
+  f2 = p.figure()
+  p.plot(pops[:,0],pops[:,1], 'r-')
+  p.grid()
+  p.xlabel('Resource density')
+  p.ylabel('Consumer density')
+  p.title('Consumer-Resource population dynamics')
+  return f2
+ 
+
+def main(argv):
+
+  """Main entry of this program"""
+
+  pops, infodict = integrate.odeint(dCR_dt, RC0, t, full_output=True)
+  p1 = plot1(pops,t,r,a,z,e)
+  p2 = plot2(pops,r,a,z,e)
+  p1.savefig('../results/LV_model1.pdf')
+  p2.savefig('../results/LV_model2.pdf')
+  return 0
+
+
+if __name__ == "__main__":
+  """Make sure the main function is called from command line"""
+  status = main(sys.argv)
+  sys.exit(status)
+**********************************************************************
+
+Testing LV1.py...
+
+LV1.py is a Python script file;
+
+checking for docstrings...
+
+Found one or more docstrings and functions
+
+Current Points = 100
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 1.27614s
+
+======================================================================
+Inspecting script file LV2.py...
+
+File contents are:
+
+**********************************************************************
+#!/usr/bin/env python3
+
+__appname__ = 'LV2.py'
+__author__ = 'Shiyuan Huang (sh422@ic.ac.uk)'
+__version__ = '0.0.1'
+__license__ = ""
+
+
+"""Example of numerical integration to solve the Lotka-Volterra model and plot
+and it takes arguments for the four LV model parameters r, a, z, e from the command line"""
+
+
+import sys
+import matplotlib.pylab as p
+import numpy as np
+import scipy as sc
+from scipy import integrate
+
+
+def dCR_dt(pops, t = 0, r = 1.0, a = 0.1, z = 1.5, e = 0.75):
+
+    """Returns the growth rate of consumer(e.g.,predator) and resource(e.g.,prey) population at given time"""
+
+    R = pops[0]
+    C = pops[1]
+    dRdt = r * R * (1 - R / K) - a * R * C 
+    dCdt = -z * C + e * a * R * C
+    
+    return np.array([dRdt, dCdt])
+
+
+t = np.linspace(0, 15, 1000)
+R0 = 10
+C0 = 5 
+RC0 = np.array([R0, C0])
+K = 40
+
+def plot1(pops, t, r = 1.0, a = 0.1, z = 1.5, e = 0.75):
+
+  """Plot population density ~ time"""
+
+  f1 = p.figure()
+  p.plot(t, pops[:,0], 'g-', label='Resource density') # Plot
+  p.plot(t, pops[:,1]  , 'b-', label='Consumer density')
+  p.grid()
+  p.legend(loc='best')
+  p.xlabel('Time')
+  p.ylabel('Population density')
+  p.title('Consumer-Resource population dynamics')
+  return f1
+  
+
+def plot2(pops, r = 1.0, a = 0.1, z = 1.5, e = 0.75):
+
+  """Plot consumer density ~ resource density"""
+
+  f2 = p.figure()
+  p.plot(pops[:,0],pops[:,1], 'r-')
+  p.grid()
+  p.xlabel('Resource density')
+  p.ylabel('Consumer density')
+  p.title('Consumer-Resource population dynamics')
+  return f2
+ 
+
+def main(argv, r = 1.0, a = 0.1, z = 1.5, e = 0.75):
+
+  """Main entry of this program"""
+
+  pops, infodict = integrate.odeint(dCR_dt, RC0, t, full_output=True)
+  p1 = plot1(pops,t,r,a,z,e)
+  p2 = plot2(pops,r,a,z,e)
+  p1.savefig('../results/LV2_model1.pdf')
+  p2.savefig('../results/LV2_model2.pdf')
+  return 0
+
+
+if __name__ == "__main__":
+  """Make sure the main function is called from command line"""
+
+  if len(sys.argv) == 5:
+    r = float(sys.argv[1])
+    a = float(sys.argv[2])
+    z = float(sys.argv[3])
+    e = float(sys.argv[4])
+    status = main(r, a, z, e)
+    sys.exit(status)
+
+  else:
+    print("Using defalut set")
+    status = main(sys.argv, r = 1.0, a = 0.1, z = 1.5, e = 0.75)
+    sys.exit(status)
+**********************************************************************
+
+Testing LV2.py...
+
+LV2.py is a Python script file;
+
+checking for docstrings...
+
+Found one or more docstrings and functions
+
+Current Points = 100
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+Using defalut set
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 1.24875s
+
+======================================================================
+Inspecting script file profileme2.py...
+
+File contents are:
+
+**********************************************************************
+"""Find out what slowed down the scripts, and we did two things 
+to improve the script:converted the loop to a list comprehension, 
+and replaced the .join with an explicit string concatenation"""
+
+__appname__ = 'profileme2.py'
+__author__ = 'Shiyuan Huang (sh422@ic.ac.uk)'
+__version__ = '0.0.1'
+__license__ = ""
+
+import numpy as np
+
+
+def my_squares(iters):
+    """Calculate squares"""
+    out = [i ** 2 for i in range(iters)]
+    return out
+
+def my_squares_numpy(iters):
+    """Creates numpy of squares"""
+    out = np.array(range(iters)) 
+    return out ** 2
+
+def my_join(iters, string):
+    """Joining strings"""
+    out = ''
+    for i in range(iters):
+        out += ", " + string
+    return out
+
+def run_my_funcs(x,y):
+    """Running two functions above"""
+    print(x,y)
+    my_squares(x)
+    my_join(x,y)
+    my_squares_numpy(x)
+    return 0
+
+run_my_funcs(10000000,"My string")
+**********************************************************************
+
+Testing profileme2.py...
+
+profileme2.py is a Python script file;
+
+checking for docstrings...
+
+Found one or more docstrings and functions
+
+Current Points = 100
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+10000000 My string
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 4.54430s
+
+======================================================================
+Inspecting script file fmr.R...
+
+File contents are:
+
+**********************************************************************
+#!/usr/bin/env RScript
+
+# Plots log(field metabolic rate) against log(body mass) for the Nagy et al 
+# 1999 dataset to a file fmr.pdf.
+rm(list = ls())
+
+cat("Reading CSV\n")
+
+nagy <- read.csv('../data/NagyEtAl1999.csv', stringsAsFactors = FALSE)
+
+cat("Creating graph\n")
+pdf('../results/fmr_plot.pdf', 11, 8.5)
+col <- c(Aves='purple3', Mammalia='red3', Reptilia='green3')
+plot(log10(nagy$M.g), log10(nagy$FMR.kJ.day.1), pch=19, col=col[nagy$Class], 
+     xlab=~log[10](M), ylab=~log[10](FMR))
+for(class in unique(nagy$Class)){
+    model <- lm(log10(FMR.kJ.day.1) ~ log10(M.g), data=nagy[nagy$Class==class,])
+    abline(model, col=col[class])
+}
+dev.off()
+
+cat("Finished in R!\n")
+
+**********************************************************************
+
+Testing fmr.R...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+Reading CSV
+Creating graph
+null device 
+          1 
+Finished in R!
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.25217s
+
+======================================================================
+Inspecting script file run_fmr_R.py...
+
+File contents are:
+
+**********************************************************************
+#!/usr/bin/env python3
+
+__appname__ = 'run_fmr_R.py'
+__author__ = 'Shiyuan Huang (sh422@ic.ac.uk)'
+__version__ = '0.0.1'
+__license__ = ""
+
+"""This script is for running fmr.R"""
+
+import subprocess
+
+subprocess.Popen("Rscript fmr.R >  ../results/fmrR.Rout 2 > ../results/fmrR_errFile.Rout", shell = True).wait()
+
+fu = open("../results/fmrR_errFile.Rout", "r")
+if len(fu.read()) > 0:
+    print("Run fmr.R unsucessfully!")
+else:
+    print("Run fmr.R sucessfully!")
+    fs = open("../results/fmrR_Rout", "r")
+    print(fs.read())
+    fs.close()
+fu.close()
+**********************************************************************
+
+Testing run_fmr_R.py...
+
+run_fmr_R.py is a Python script file;
+
+checking for docstrings...
+
+Found no functions, but one docstring for the script, good
+
+Current Points = 100
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+Run fmr.R unsucessfully!
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.26902s
+
+======================================================================
+Inspecting script file profileme.py...
+
+File contents are:
+
+**********************************************************************
+"""Find out what slowed down the scripts"""
+
+__appname__ = 'profileme.py'
+__author__ = 'Shiyuan Huang (sh422@ic.ac.uk)'
+__version__ = '0.0.1'
+__license__ = ""
+
+def my_squares(iters):
+    """Calculate squares"""
+    out = []
+    for i in range(iters):
+        out.append(i ** 2)
+    return out
+
+def my_join(iters, string):
+    """Joining strings"""
+    out = ''
+    for i in range(iters):
+        out += string.join(", ")
+    return out
+
+def run_my_funcs(x,y):
+    """Running two functions above"""
+    print(x,y)
+    my_squares(x)
+    my_join(x,y)
+    return 0
+
+run_my_funcs(10000000,"My string")
+**********************************************************************
+
+Testing profileme.py...
+
+profileme.py is a Python script file;
+
+checking for docstrings...
+
+Found one or more docstrings and functions
+
+Current Points = 100
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+10000000 My string
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 4.87010s
+
+======================================================================
+Inspecting script file MyFirstJupyterNb.ipynb...
+
+File contents are:
+
+**********************************************************************
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7b417167",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# This is my first Jupyter notebook"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3.10.6 64-bit",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  },
+  "vscode": {
+   "interpreter": {
+    "hash": "916dbcbb3f70747c44a77c7bcd40155683ae19c65e1c03b4aa3499c5328201f1"
+   }
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
+
+**********************************************************************
+
+Testing MyFirstJupyterNb.ipynb...
+
+======================================================================
+Inspecting script file runLV.py...
+
+File contents are:
+
+**********************************************************************
+#!/usr/bin/env python3
+
+__appname__ = 'runLV.py'
+__author__ = 'Shiyuan Huang (sh422@ic.ac.uk)'
+__version__ = '0.0.1'
+__license__ = ""
+
+"""Comparing the running speed between LV1.py and LV2.py"""
+
+import cProfile as cp
+import LV1
+import LV2
+import pstats
+
+pf1 = cp.Profile()
+pf1.enable()
+LV1.main(0)
+pf1.disable()
+stats1 = pstats.Stats(pf1).sort_stats('tottime')
+stats1.print_stats(10)
+
+
+pf2 = cp.Profile()
+pf2.enable()
+LV2.main(1, 0.1, 1.5, 0.75)
+pf2.disable()
+stats2 = pstats.Stats(pf2).sort_stats('tottime')
+stats2.print_stats(10)
+**********************************************************************
+
+Testing runLV.py...
+
+runLV.py is a Python script file;
+
+checking for docstrings...
+
+Found no functions, but one docstring for the script, good
+
+Current Points = 100
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+         467492 function calls (460769 primitive calls) in 0.610 seconds
+
+   Ordered by: internal time
+   List reduced from 2450 to 10 due to restriction <10>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        2    0.195    0.097    0.195    0.097 {built-in method _tkinter.create}
+      220    0.052    0.000    0.052    0.000 {method 'call' of '_tkinter.tkapp' objects}
+        3    0.016    0.005    0.060    0.020 /usr/lib/python3/dist-packages/matplotlib/font_manage
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 1.73965s
+
+======================================================================
+Inspecting script file TestR.R...
+
+File contents are:
+
+**********************************************************************
+print("Hello, this is R!")
+**********************************************************************
+
+Testing TestR.R...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+[1] "Hello, this is R!"
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.18212s
+
+======================================================================
+Inspecting script file timeitme.py...
+
+File contents are:
+
+**********************************************************************
+"""Using timeit to test loops vs. list comprehensions to find which is faster."""
+
+__appname__ = 'timeitme.py'
+__author__ = 'Shiyuan Huang (sh422@ic.ac.uk)'
+__version__ = '0.0.1'
+__license__ = ""
+
+##############################################################################
+# loops vs. list comprehensions: which is faster?
+##############################################################################
+
+iters = 1000000
+
+import timeit
+
+from profileme import my_squares as my_squares_loops
+
+from profileme2 import my_squares as my_squares_lc
+
+##############################################################################
+# loops vs. the join method for strings: which is faster?
+##############################################################################
+
+mystring = "my string"
+
+from profileme import my_join as my_join_join
+
+from profileme2 import my_join as my_join
+
+import time
+start = time.time()
+my_squares_loops(iters)
+print(f"my_squares_loops takes {time.time() - start} s to run.")
+
+start = time.time()
+my_squares_lc(iters)
+print(f"my_squares_lc takes {time.time() - start} s to run.")
+**********************************************************************
+
+Testing timeitme.py...
+
+timeitme.py is a Python script file;
+
+checking for docstrings...
+
+Found no functions, but one docstring for the script, good
+
+Current Points = 100
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 10.00498s
+
+======================================================================
+======================================================================
+Finished running scripts
+
+Ran into 0 errors
+
+======================================================================
+======================================================================
+
+FINISHED WEEKLY ASSESSMENT
+
+Current Points for the Week = 100
+
+NOTE THAT THESE ARE POINTS, NOT MARKS FOR THE WEEK!
