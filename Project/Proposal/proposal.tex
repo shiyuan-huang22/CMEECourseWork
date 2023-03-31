@@ -1,0 +1,76 @@
+\documentclass[11pt]{article}
+\usepackage{authblk} 
+\usepackage[onehalfspacing]{setspace}
+
+
+
+\title{Project Proposal:
+\textbf{Assessing the functional composition and diversity of the Pound Hill Disturbance Experiment}
+
+\vspace{25 pt} MSc Computational Methods in Ecology and Evolution}
+
+\author{\textbf{Shiyuan Huang}
+\\Email:shiyuan.huang22@imperial.ac.uk
+
+\vspace{12 pt}
+
+\textbf{Supervisor: Josh Hodge}
+\\Email:j.hodge@imperial.ac.uk}
+
+\affil{Imperial College London}
+\date{\today}
+
+
+\begin{document}
+  \begin{titlepage}
+
+    \maketitle
+    
+  \end{titlepage}
+
+\newpage
+
+\section{Introduction}
+
+Functional features are accurate indicators of community ecosystem function and their reactions to environmental gradients, which is crucial, according to an increasing number of studies in recent years \cite{diaz2004plant}. Trait-environment relationships are a core concept when studying ecosystems. Traits refer to the morphological, physiological, and behavioral characteristics of organisms, which can be measured and analyzed through disciplines such as biology, ecology, and evolution. Environmental factors include various physical, chemical, and biological conditions that organisms are exposed to. Trait-environment relationships reveal how traits are influenced by the environment and how they affect an individual's performance and survival in the ecosystem. Studies have shown that this relationship is crucial for understanding the maintenance of biodiversity and the stability of ecosystem function in ecological systems. In ecology and environmental management, relationships between traits and environments are interesting for a number of crucial reasons in ecology and environmental management, particularly in vegetation research \cite{kleyer2012assessing}. Plant traits can affect their competitiveness, growth rate, life cycle, resource use, and more. Changes in these traits can reflect a plant's response to environmental changes. Therefore, by measuring and comparing plant traits, we can understand the different ways in which different plants survive and perform in ecosystems, while predicting their responses to environmental changes. However a significant difficulty is to explain why species differ as well as how they differ, which can be done by studying the traits of various species \cite{mcgill2006rebuilding}. Thus, species features become a crucial tool for comprehending the dynamics and structure of ecological groups, increasing their capacity to anticipate natural and man-made problems \cite{dray2014combining}.
+
+\section{Proposed Methods}
+
+The project will be based on R, it will use species-level trait measurements from trait databases to examine community-level differences in functional composition and diversity. Species-level trait databases can be obtained from the TRY Data Explorer. Methodologically, I will first use RLQ and fourth-corner methods separately, and then combine fourth-corner and RLQ methods to analyze organismal traits to examine community-level differences in functional composition and diversity as the preferred approach, i.e., applying the fourth-corner test directly to the output of the RLQ analysis \cite{dray2014combining}. The results will be visualized, and the impact of species-level traits on community-level differences will be analyzed.
+
+\section{Anticipated outcomes}
+
+We will get plots of results from RLQ analysis, fourth-corner test, and combined RLQ and fourth-corner analysis in R. These plots will show the relationship of trait and environmental variation clearly. Then by statistical analyses we can examine community-level differences in functional composition and diversity from trait databases.
+
+\section{Timeline}
+
+\textbf{April 16th}:  R code for implementing RLQ, fourth-corner method, and combined RLQ and fourth-corner method. 
+\\\textbf{June 16th}:  Visualize then analyse the results. 
+\\\textbf{June 26th}:  Hand in the analysed results to supervisor.
+\\\textbf{July 16th}:  Complete the writing of report.
+\\\textbf{Aug  6th}:  Hand in the report to supervisor to check if it's necessary to modify. 
+
+\section{Budget}
+
+£100 for 5TB Hard Drive(To backup and store the data files)
+
+
+
+
+\newpage
+
+\textbf{I have read and approved the proposal and the budget.}
+
+\vspace{12 pt} Supervisor name:Josh Hodge
+
+
+\vspace{20 pt} Signature:        
+
+\vspace{12 pt}Date:
+
+
+\bibliographystyle{apalike}
+
+\bibliography{proposal}
+
+\end{document}
