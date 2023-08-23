@@ -1,0 +1,578 @@
+"","AccSpeciesID","AccSpeciesName","TraitID","TraitName","Count"
+"1",909,"Achillea millefolium",26,"Seed dry mass",139
+"2",1937,"Agrostis gigantea",26,"Seed dry mass",21
+"3",3410,"Anagallis arvensis",26,"Seed dry mass",76
+"4",3455,"Anchusa arvensis",26,"Seed dry mass",20
+"5",4170,"APERA SPICA-VENTI",26,"Seed dry mass",21
+"6",4187,"Aphanes australis",26,"Seed dry mass",12
+"7",4341,"Arabidopsis thaliana",26,"Seed dry mass",61
+"8",4609,"Arenaria leptoclados",26,"Seed dry mass",12
+"9",4614,"Arenaria serpyllifolia",26,"Seed dry mass",96
+"10",5134,"Arrhenatherum elatius",26,"Seed dry mass",84
+"11",5257,"Artemisia vulgaris",26,"Seed dry mass",30
+"12",8453,"Bromus hordeaceus",26,"Seed dry mass",87
+"13",8542,"Bromus sterilis",26,"Seed dry mass",34
+"14",10226,"CAPSELLA BURSA-PASTORIS",26,"Seed dry mass",97
+"15",11068,"Castanea sativa",26,"Seed dry mass",31
+"16",11781,"Cerastium fontanum",26,"Seed dry mass",74
+"17",11783,"Cerastium glomeratum",26,"Seed dry mass",40
+"18",12159,"Chenopodium album",26,"Seed dry mass",111
+"19",13016,"Cirsium arvense",26,"Seed dry mass",93
+"20",14244,"Convolvulus arvensis",26,"Seed dry mass",67
+"21",14280,"Erigeron canadensis",26,"Seed dry mass",70
+"22",15174,"Crepis capillaris",26,"Seed dry mass",35
+"23",16700,"Dactylis glomerata",26,"Seed dry mass",213
+"24",20359,"Elymus repens",26,"Seed dry mass",62
+"25",20816,"Epilobium ciliatum",26,"Seed dry mass",68
+"26",20863,"Epilobium montanum",26,"Seed dry mass",27
+"27",21900,"Erodium cicutarium",26,"Seed dry mass",62
+"28",23444,"Euphorbia helioscopia",26,"Seed dry mass",31
+"29",23920,"Fallopia convolvulus",26,"Seed dry mass",57
+"30",24604,"Festuca rubra",26,"Seed dry mass",149
+"31",25477,"Galinsoga parviflora",26,"Seed dry mass",19
+"32",26069,"Geranium molle",26,"Seed dry mass",33
+"33",28473,"Heracleum sphondylium",26,"Seed dry mass",97
+"34",29305,"Holcus lanatus",26,"Seed dry mass",118
+"35",29306,"Holcus mollis",26,"Seed dry mass",24
+"36",30010,"Hypericum perforatum",26,"Seed dry mass",116
+"37",30052,"Hypochaeris radicata",26,"Seed dry mass",81
+"38",32132,"Lactuca serriola",26,"Seed dry mass",73
+"39",32230,"Lamium amplexicaule",26,"Seed dry mass",38
+"40",32357,"Lapsana communis",26,"Seed dry mass",32
+"41",34017,"Lolium perenne",26,"Seed dry mass",116
+"42",35671,"Matricaria chamomilla",26,"Seed dry mass",115
+"43",35825,"Medicago lupulina",26,"Seed dry mass",137
+"44",37495,"Myosotis arvensis",26,"Seed dry mass",39
+"45",40033,"Panicum miliaceum",26,"Seed dry mass",22
+"46",40152,"Papaver dubium",26,"Seed dry mass",149
+"47",40195,"Papaver rhoeas",26,"Seed dry mass",76
+"48",41191,"Persicaria lapathifolia",26,"Seed dry mass",64
+"49",41193,"Persicaria maculosa",26,"Seed dry mass",46
+"50",41542,"Phleum bertolonii",26,"Seed dry mass",10
+"51",42541,"Plantago lanceolata",26,"Seed dry mass",186
+"52",43221,"Polygonum aviculare",26,"Seed dry mass",49
+"53",44419,"Prunus sp",26,"Seed dry mass",10
+"54",45470,"Quercus robur",26,"Seed dry mass",51
+"55",45737,"Ranunculus repens",26,"Seed dry mass",47
+"56",45800,"Raphanus raphanistrum",26,"Seed dry mass",55
+"57",47451,"Rumex acetosa",26,"Seed dry mass",97
+"58",47452,"Rumex acetosella",26,"Seed dry mass",83
+"59",47468,"Rumex crispus",26,"Seed dry mass",106
+"60",47498,"Rumex obtusifolius",26,"Seed dry mass",54
+"61",50427,"Sisymbrium officinale",26,"Seed dry mass",30
+"62",50914,"Sonchus asper",26,"Seed dry mass",121
+"63",50929,"Sonchus oleraceus",26,"Seed dry mass",59
+"64",51244,"Spergula arvensis",26,"Seed dry mass",68
+"65",51627,"Stellaria graminea",26,"Seed dry mass",57
+"66",54945,"Trifolium dubium",26,"Seed dry mass",76
+"67",54998,"Trifolium repens",26,"Seed dry mass",174
+"68",55128,"Tripleurospermum inodorum",26,"Seed dry mass",115
+"69",56236,"Veronica arvensis",26,"Seed dry mass",70
+"70",56242,"Veronica chamaedrys",26,"Seed dry mass",74
+"71",56268,"Veronica persica",26,"Seed dry mass",50
+"72",56356,"Vicia cracca",26,"Seed dry mass",118
+"73",56372,"Vicia hirsuta",26,"Seed dry mass",93
+"74",56395,"Vicia sativa",26,"Seed dry mass",137
+"75",56402,"Vicia tetrasperma",26,"Seed dry mass",86
+"76",56491,"Viola arvensis",26,"Seed dry mass",109
+"77",56829,"Vulpia bromoides",26,"Seed dry mass",17
+"78",56838,"Vulpia myuros",26,"Seed dry mass",58
+"79",235402,"Jacobaea vulgaris",26,"Seed dry mass",40
+"80",246865,"Papaver dubium",26,"Seed dry mass",6
+"81",269546,"Vicia sativa",26,"Seed dry mass",218
+"82",909,"Achillea millefolium",33,"Seed (seedbank) longevity",345
+"83",1937,"Agrostis gigantea",33,"Seed (seedbank) longevity",48
+"84",3410,"Anagallis arvensis",33,"Seed (seedbank) longevity",211
+"85",3455,"Anchusa arvensis",33,"Seed (seedbank) longevity",21
+"86",4170,"APERA SPICA-VENTI",33,"Seed (seedbank) longevity",56
+"87",4187,"Aphanes australis",33,"Seed (seedbank) longevity",1
+"88",4341,"Arabidopsis thaliana",33,"Seed (seedbank) longevity",104
+"89",4609,"Arenaria leptoclados",33,"Seed (seedbank) longevity",4
+"90",4614,"Arenaria serpyllifolia",33,"Seed (seedbank) longevity",148
+"91",5134,"Arrhenatherum elatius",33,"Seed (seedbank) longevity",346
+"92",5257,"Artemisia vulgaris",33,"Seed (seedbank) longevity",76
+"93",8453,"Bromus hordeaceus",33,"Seed (seedbank) longevity",134
+"94",8542,"Bromus sterilis",33,"Seed (seedbank) longevity",75
+"95",10226,"CAPSELLA BURSA-PASTORIS",33,"Seed (seedbank) longevity",368
+"96",11068,"Castanea sativa",33,"Seed (seedbank) longevity",3
+"97",11781,"Cerastium fontanum",33,"Seed (seedbank) longevity",173
+"98",11783,"Cerastium glomeratum",33,"Seed (seedbank) longevity",22
+"99",12159,"Chenopodium album",33,"Seed (seedbank) longevity",459
+"100",13016,"Cirsium arvense",33,"Seed (seedbank) longevity",359
+"101",14244,"Convolvulus arvensis",33,"Seed (seedbank) longevity",156
+"102",14280,"Erigeron canadensis",33,"Seed (seedbank) longevity",136
+"103",15174,"Crepis capillaris",33,"Seed (seedbank) longevity",74
+"104",16700,"Dactylis glomerata",33,"Seed (seedbank) longevity",427
+"105",20359,"Elymus repens",33,"Seed (seedbank) longevity",346
+"106",20816,"Epilobium ciliatum",33,"Seed (seedbank) longevity",71
+"107",20863,"Epilobium montanum",33,"Seed (seedbank) longevity",67
+"108",21900,"Erodium cicutarium",33,"Seed (seedbank) longevity",42
+"109",23444,"Euphorbia helioscopia",33,"Seed (seedbank) longevity",69
+"110",23920,"Fallopia convolvulus",33,"Seed (seedbank) longevity",220
+"111",24604,"Festuca rubra",33,"Seed (seedbank) longevity",373
+"112",25477,"Galinsoga parviflora",33,"Seed (seedbank) longevity",15
+"113",26069,"Geranium molle",33,"Seed (seedbank) longevity",55
+"114",28473,"Heracleum sphondylium",33,"Seed (seedbank) longevity",118
+"115",29305,"Holcus lanatus",33,"Seed (seedbank) longevity",419
+"116",29306,"Holcus mollis",33,"Seed (seedbank) longevity",68
+"117",30010,"Hypericum perforatum",33,"Seed (seedbank) longevity",246
+"118",30052,"Hypochaeris radicata",33,"Seed (seedbank) longevity",123
+"119",32132,"Lactuca serriola",33,"Seed (seedbank) longevity",89
+"120",32230,"Lamium amplexicaule",33,"Seed (seedbank) longevity",46
+"121",32357,"Lapsana communis",33,"Seed (seedbank) longevity",71
+"122",34017,"Lolium perenne",33,"Seed (seedbank) longevity",254
+"123",35671,"Matricaria chamomilla",33,"Seed (seedbank) longevity",101
+"124",35825,"Medicago lupulina",33,"Seed (seedbank) longevity",260
+"125",37495,"Myosotis arvensis",33,"Seed (seedbank) longevity",118
+"126",40033,"Panicum miliaceum",33,"Seed (seedbank) longevity",1
+"127",40152,"Papaver dubium",33,"Seed (seedbank) longevity",43
+"128",40195,"Papaver rhoeas",33,"Seed (seedbank) longevity",137
+"129",41191,"Persicaria lapathifolia",33,"Seed (seedbank) longevity",70
+"130",41193,"Persicaria maculosa",33,"Seed (seedbank) longevity",192
+"131",42541,"Plantago lanceolata",33,"Seed (seedbank) longevity",429
+"132",43221,"Polygonum aviculare",33,"Seed (seedbank) longevity",310
+"133",45470,"Quercus robur",33,"Seed (seedbank) longevity",67
+"134",45737,"Ranunculus repens",33,"Seed (seedbank) longevity",489
+"135",45800,"Raphanus raphanistrum",33,"Seed (seedbank) longevity",56
+"136",47451,"Rumex acetosa",33,"Seed (seedbank) longevity",374
+"137",47452,"Rumex acetosella",33,"Seed (seedbank) longevity",194
+"138",47468,"Rumex crispus",33,"Seed (seedbank) longevity",240
+"139",47498,"Rumex obtusifolius",33,"Seed (seedbank) longevity",202
+"140",50427,"Sisymbrium officinale",33,"Seed (seedbank) longevity",43
+"141",50914,"Sonchus asper",33,"Seed (seedbank) longevity",129
+"142",50929,"Sonchus oleraceus",33,"Seed (seedbank) longevity",109
+"143",51244,"Spergula arvensis",33,"Seed (seedbank) longevity",134
+"144",51627,"Stellaria graminea",33,"Seed (seedbank) longevity",110
+"145",54945,"Trifolium dubium",33,"Seed (seedbank) longevity",126
+"146",54998,"Trifolium repens",33,"Seed (seedbank) longevity",489
+"147",55128,"Tripleurospermum inodorum",33,"Seed (seedbank) longevity",181
+"148",56236,"Veronica arvensis",33,"Seed (seedbank) longevity",195
+"149",56242,"Veronica chamaedrys",33,"Seed (seedbank) longevity",147
+"150",56268,"Veronica persica",33,"Seed (seedbank) longevity",133
+"151",56356,"Vicia cracca",33,"Seed (seedbank) longevity",269
+"152",56372,"Vicia hirsuta",33,"Seed (seedbank) longevity",182
+"153",56395,"Vicia sativa",33,"Seed (seedbank) longevity",104
+"154",56402,"Vicia tetrasperma",33,"Seed (seedbank) longevity",54
+"155",56491,"Viola arvensis",33,"Seed (seedbank) longevity",156
+"156",56829,"Vulpia bromoides",33,"Seed (seedbank) longevity",14
+"157",56838,"Vulpia myuros",33,"Seed (seedbank) longevity",10
+"158",235402,"Jacobaea vulgaris",33,"Seed (seedbank) longevity",105
+"159",269546,"Vicia sativa",33,"Seed (seedbank) longevity",69
+"160",909,"Achillea millefolium",95,"Seed germination rate (germination efficiency)",10
+"161",1937,"Agrostis gigantea",95,"Seed germination rate (germination efficiency)",5
+"162",3410,"Anagallis arvensis",95,"Seed germination rate (germination efficiency)",5
+"163",3455,"Anchusa arvensis",95,"Seed germination rate (germination efficiency)",5
+"164",4170,"APERA SPICA-VENTI",95,"Seed germination rate (germination efficiency)",3
+"165",4187,"Aphanes australis",95,"Seed germination rate (germination efficiency)",5
+"166",4341,"Arabidopsis thaliana",95,"Seed germination rate (germination efficiency)",15
+"167",4614,"Arenaria serpyllifolia",95,"Seed germination rate (germination efficiency)",15
+"168",5134,"Arrhenatherum elatius",95,"Seed germination rate (germination efficiency)",7
+"169",5257,"Artemisia vulgaris",95,"Seed germination rate (germination efficiency)",5
+"170",8453,"Bromus hordeaceus",95,"Seed germination rate (germination efficiency)",8
+"171",8542,"Bromus sterilis",95,"Seed germination rate (germination efficiency)",6
+"172",10226,"CAPSELLA BURSA-PASTORIS",95,"Seed germination rate (germination efficiency)",2
+"173",11781,"Cerastium fontanum",95,"Seed germination rate (germination efficiency)",6
+"174",11783,"Cerastium glomeratum",95,"Seed germination rate (germination efficiency)",4
+"175",12159,"Chenopodium album",95,"Seed germination rate (germination efficiency)",15
+"176",13016,"Cirsium arvense",95,"Seed germination rate (germination efficiency)",6
+"177",14244,"Convolvulus arvensis",95,"Seed germination rate (germination efficiency)",5
+"178",14280,"Erigeron canadensis",95,"Seed germination rate (germination efficiency)",6
+"179",15174,"Crepis capillaris",95,"Seed germination rate (germination efficiency)",6
+"180",16700,"Dactylis glomerata",95,"Seed germination rate (germination efficiency)",20
+"181",20359,"Elymus repens",95,"Seed germination rate (germination efficiency)",7
+"182",20816,"Epilobium ciliatum",95,"Seed germination rate (germination efficiency)",17
+"183",20863,"Epilobium montanum",95,"Seed germination rate (germination efficiency)",5
+"184",21900,"Erodium cicutarium",95,"Seed germination rate (germination efficiency)",4
+"185",23444,"Euphorbia helioscopia",95,"Seed germination rate (germination efficiency)",5
+"186",23920,"Fallopia convolvulus",95,"Seed germination rate (germination efficiency)",2
+"187",24604,"Festuca rubra",95,"Seed germination rate (germination efficiency)",7
+"188",25477,"Galinsoga parviflora",95,"Seed germination rate (germination efficiency)",5
+"189",26069,"Geranium molle",95,"Seed germination rate (germination efficiency)",4
+"190",28473,"Heracleum sphondylium",95,"Seed germination rate (germination efficiency)",10
+"191",29305,"Holcus lanatus",95,"Seed germination rate (germination efficiency)",5
+"192",29306,"Holcus mollis",95,"Seed germination rate (germination efficiency)",3
+"193",30010,"Hypericum perforatum",95,"Seed germination rate (germination efficiency)",8
+"194",30052,"Hypochaeris radicata",95,"Seed germination rate (germination efficiency)",11
+"195",32132,"Lactuca serriola",95,"Seed germination rate (germination efficiency)",7
+"196",32230,"Lamium amplexicaule",95,"Seed germination rate (germination efficiency)",5
+"197",32357,"Lapsana communis",95,"Seed germination rate (germination efficiency)",5
+"198",34017,"Lolium perenne",95,"Seed germination rate (germination efficiency)",25
+"199",35671,"Matricaria chamomilla",95,"Seed germination rate (germination efficiency)",5
+"200",35825,"Medicago lupulina",95,"Seed germination rate (germination efficiency)",14
+"201",37495,"Myosotis arvensis",95,"Seed germination rate (germination efficiency)",5
+"202",40033,"Panicum miliaceum",95,"Seed germination rate (germination efficiency)",2
+"203",40152,"Papaver dubium",95,"Seed germination rate (germination efficiency)",4
+"204",40195,"Papaver rhoeas",95,"Seed germination rate (germination efficiency)",10
+"205",41191,"Persicaria lapathifolia",95,"Seed germination rate (germination efficiency)",4
+"206",41193,"Persicaria maculosa",95,"Seed germination rate (germination efficiency)",3
+"207",41542,"Phleum bertolonii",95,"Seed germination rate (germination efficiency)",3
+"208",42541,"Plantago lanceolata",95,"Seed germination rate (germination efficiency)",5
+"209",43221,"Polygonum aviculare",95,"Seed germination rate (germination efficiency)",7
+"210",45737,"Ranunculus repens",95,"Seed germination rate (germination efficiency)",2
+"211",45800,"Raphanus raphanistrum",95,"Seed germination rate (germination efficiency)",14
+"212",47451,"Rumex acetosa",95,"Seed germination rate (germination efficiency)",5
+"213",47452,"Rumex acetosella",95,"Seed germination rate (germination efficiency)",3
+"214",47468,"Rumex crispus",95,"Seed germination rate (germination efficiency)",7
+"215",47498,"Rumex obtusifolius",95,"Seed germination rate (germination efficiency)",6
+"216",50427,"Sisymbrium officinale",95,"Seed germination rate (germination efficiency)",7
+"217",50914,"Sonchus asper",95,"Seed germination rate (germination efficiency)",5
+"218",50929,"Sonchus oleraceus",95,"Seed germination rate (germination efficiency)",5
+"219",51244,"Spergula arvensis",95,"Seed germination rate (germination efficiency)",4
+"220",51627,"Stellaria graminea",95,"Seed germination rate (germination efficiency)",3
+"221",54945,"Trifolium dubium",95,"Seed germination rate (germination efficiency)",8
+"222",54998,"Trifolium repens",95,"Seed germination rate (germination efficiency)",15
+"223",55128,"Tripleurospermum inodorum",95,"Seed germination rate (germination efficiency)",13
+"224",56236,"Veronica arvensis",95,"Seed germination rate (germination efficiency)",5
+"225",56242,"Veronica chamaedrys",95,"Seed germination rate (germination efficiency)",9
+"226",56268,"Veronica persica",95,"Seed germination rate (germination efficiency)",6
+"227",56356,"Vicia cracca",95,"Seed germination rate (germination efficiency)",6
+"228",56372,"Vicia hirsuta",95,"Seed germination rate (germination efficiency)",7
+"229",56395,"Vicia sativa",95,"Seed germination rate (germination efficiency)",7
+"230",56402,"Vicia tetrasperma",95,"Seed germination rate (germination efficiency)",7
+"231",56491,"Viola arvensis",95,"Seed germination rate (germination efficiency)",8
+"232",56829,"Vulpia bromoides",95,"Seed germination rate (germination efficiency)",14
+"233",56838,"Vulpia myuros",95,"Seed germination rate (germination efficiency)",4
+"234",235402,"Jacobaea vulgaris",95,"Seed germination rate (germination efficiency)",5
+"235",246865,"Papaver dubium",95,"Seed germination rate (germination efficiency)",2
+"236",269546,"Vicia sativa",95,"Seed germination rate (germination efficiency)",6
+"237",909,"Achillea millefolium",96,"Seed oil content per seed mass",7
+"238",3410,"Anagallis arvensis",96,"Seed oil content per seed mass",5
+"239",5134,"Arrhenatherum elatius",96,"Seed oil content per seed mass",5
+"240",10226,"CAPSELLA BURSA-PASTORIS",96,"Seed oil content per seed mass",7
+"241",12159,"Chenopodium album",96,"Seed oil content per seed mass",3
+"242",13016,"Cirsium arvense",96,"Seed oil content per seed mass",5
+"243",14244,"Convolvulus arvensis",96,"Seed oil content per seed mass",6
+"244",16700,"Dactylis glomerata",96,"Seed oil content per seed mass",6
+"245",20359,"Elymus repens",96,"Seed oil content per seed mass",4
+"246",23444,"Euphorbia helioscopia",96,"Seed oil content per seed mass",5
+"247",28473,"Heracleum sphondylium",96,"Seed oil content per seed mass",11
+"248",29305,"Holcus lanatus",96,"Seed oil content per seed mass",4
+"249",30010,"Hypericum perforatum",96,"Seed oil content per seed mass",6
+"250",32132,"Lactuca serriola",96,"Seed oil content per seed mass",8
+"251",32230,"Lamium amplexicaule",96,"Seed oil content per seed mass",5
+"252",34017,"Lolium perenne",96,"Seed oil content per seed mass",3
+"253",35825,"Medicago lupulina",96,"Seed oil content per seed mass",8
+"254",40033,"Panicum miliaceum",96,"Seed oil content per seed mass",3
+"255",40195,"Papaver rhoeas",96,"Seed oil content per seed mass",4
+"256",42541,"Plantago lanceolata",96,"Seed oil content per seed mass",7
+"257",45800,"Raphanus raphanistrum",96,"Seed oil content per seed mass",5
+"258",47452,"Rumex acetosella",96,"Seed oil content per seed mass",4
+"259",47468,"Rumex crispus",96,"Seed oil content per seed mass",9
+"260",47498,"Rumex obtusifolius",96,"Seed oil content per seed mass",3
+"261",50929,"Sonchus oleraceus",96,"Seed oil content per seed mass",5
+"262",51244,"Spergula arvensis",96,"Seed oil content per seed mass",4
+"263",54945,"Trifolium dubium",96,"Seed oil content per seed mass",11
+"264",54998,"Trifolium repens",96,"Seed oil content per seed mass",8
+"265",56356,"Vicia cracca",96,"Seed oil content per seed mass",6
+"266",56372,"Vicia hirsuta",96,"Seed oil content per seed mass",5
+"267",56395,"Vicia sativa",96,"Seed oil content per seed mass",9
+"268",269546,"Vicia sativa",96,"Seed oil content per seed mass",9
+"269",10226,"CAPSELLA BURSA-PASTORIS",351,"Seed number per dispersal unit",18
+"270",14244,"Convolvulus arvensis",351,"Seed number per dispersal unit",4
+"271",30010,"Hypericum perforatum",351,"Seed number per dispersal unit",3
+"272",30052,"Hypochaeris radicata",351,"Seed number per dispersal unit",4
+"273",35825,"Medicago lupulina",351,"Seed number per dispersal unit",1
+"274",42541,"Plantago lanceolata",351,"Seed number per dispersal unit",4
+"275",45470,"Quercus robur",351,"Seed number per dispersal unit",4
+"276",50914,"Sonchus asper",351,"Seed number per dispersal unit",1
+"277",50929,"Sonchus oleraceus",351,"Seed number per dispersal unit",1
+"278",56236,"Veronica arvensis",351,"Seed number per dispersal unit",3
+"279",56242,"Veronica chamaedrys",351,"Seed number per dispersal unit",2
+"280",56268,"Veronica persica",351,"Seed number per dispersal unit",3
+"281",56491,"Viola arvensis",351,"Seed number per dispersal unit",3
+"282",235402,"Jacobaea vulgaris",351,"Seed number per dispersal unit",2
+"283",909,"Achillea millefolium",353,"Seed germination temperature",10
+"284",1937,"Agrostis gigantea",353,"Seed germination temperature",2
+"285",3410,"Anagallis arvensis",353,"Seed germination temperature",6
+"286",3455,"Anchusa arvensis",353,"Seed germination temperature",2
+"287",4170,"APERA SPICA-VENTI",353,"Seed germination temperature",7
+"288",4187,"Aphanes australis",353,"Seed germination temperature",3
+"289",4341,"Arabidopsis thaliana",353,"Seed germination temperature",5
+"290",4614,"Arenaria serpyllifolia",353,"Seed germination temperature",5
+"291",5134,"Arrhenatherum elatius",353,"Seed germination temperature",2
+"292",5257,"Artemisia vulgaris",353,"Seed germination temperature",5
+"293",8542,"Bromus sterilis",353,"Seed germination temperature",2
+"294",10226,"CAPSELLA BURSA-PASTORIS",353,"Seed germination temperature",10
+"295",11781,"Cerastium fontanum",353,"Seed germination temperature",2
+"296",12159,"Chenopodium album",353,"Seed germination temperature",8
+"297",13016,"Cirsium arvense",353,"Seed germination temperature",10
+"298",14244,"Convolvulus arvensis",353,"Seed germination temperature",3
+"299",14280,"Erigeron canadensis",353,"Seed germination temperature",8
+"300",15174,"Crepis capillaris",353,"Seed germination temperature",2
+"301",16700,"Dactylis glomerata",353,"Seed germination temperature",2
+"302",20359,"Elymus repens",353,"Seed germination temperature",7
+"303",20816,"Epilobium ciliatum",353,"Seed germination temperature",2
+"304",20863,"Epilobium montanum",353,"Seed germination temperature",5
+"305",21900,"Erodium cicutarium",353,"Seed germination temperature",3
+"306",23444,"Euphorbia helioscopia",353,"Seed germination temperature",3
+"307",23920,"Fallopia convolvulus",353,"Seed germination temperature",4
+"308",24604,"Festuca rubra",353,"Seed germination temperature",2
+"309",25477,"Galinsoga parviflora",353,"Seed germination temperature",9
+"310",29305,"Holcus lanatus",353,"Seed germination temperature",6
+"311",30010,"Hypericum perforatum",353,"Seed germination temperature",2
+"312",30052,"Hypochaeris radicata",353,"Seed germination temperature",4
+"313",32132,"Lactuca serriola",353,"Seed germination temperature",2
+"314",32230,"Lamium amplexicaule",353,"Seed germination temperature",8
+"315",32357,"Lapsana communis",353,"Seed germination temperature",6
+"316",34017,"Lolium perenne",353,"Seed germination temperature",2
+"317",35671,"Matricaria chamomilla",353,"Seed germination temperature",3
+"318",35825,"Medicago lupulina",353,"Seed germination temperature",2
+"319",37495,"Myosotis arvensis",353,"Seed germination temperature",6
+"320",40152,"Papaver dubium",353,"Seed germination temperature",2
+"321",40195,"Papaver rhoeas",353,"Seed germination temperature",4
+"322",41191,"Persicaria lapathifolia",353,"Seed germination temperature",7
+"323",41193,"Persicaria maculosa",353,"Seed germination temperature",4
+"324",42541,"Plantago lanceolata",353,"Seed germination temperature",3
+"325",43221,"Polygonum aviculare",353,"Seed germination temperature",5
+"326",45800,"Raphanus raphanistrum",353,"Seed germination temperature",5
+"327",47451,"Rumex acetosa",353,"Seed germination temperature",2
+"328",47452,"Rumex acetosella",353,"Seed germination temperature",8
+"329",47468,"Rumex crispus",353,"Seed germination temperature",13
+"330",47498,"Rumex obtusifolius",353,"Seed germination temperature",9
+"331",50427,"Sisymbrium officinale",353,"Seed germination temperature",2
+"332",50914,"Sonchus asper",353,"Seed germination temperature",4
+"333",50929,"Sonchus oleraceus",353,"Seed germination temperature",4
+"334",51244,"Spergula arvensis",353,"Seed germination temperature",8
+"335",54998,"Trifolium repens",353,"Seed germination temperature",5
+"336",55128,"Tripleurospermum inodorum",353,"Seed germination temperature",5
+"337",56236,"Veronica arvensis",353,"Seed germination temperature",7
+"338",56242,"Veronica chamaedrys",353,"Seed germination temperature",3
+"339",56268,"Veronica persica",353,"Seed germination temperature",7
+"340",56356,"Vicia cracca",353,"Seed germination temperature",2
+"341",56372,"Vicia hirsuta",353,"Seed germination temperature",6
+"342",56395,"Vicia sativa",353,"Seed germination temperature",2
+"343",56402,"Vicia tetrasperma",353,"Seed germination temperature",2
+"344",56491,"Viola arvensis",353,"Seed germination temperature",5
+"345",56829,"Vulpia bromoides",353,"Seed germination temperature",4
+"346",56838,"Vulpia myuros",353,"Seed germination temperature",1
+"347",235402,"Jacobaea vulgaris",353,"Seed germination temperature",5
+"348",909,"Achillea millefolium",788,"Species light requirement",7
+"349",1937,"Agrostis gigantea",788,"Species light requirement",1
+"350",4187,"Aphanes australis",788,"Species light requirement",1
+"351",4341,"Arabidopsis thaliana",788,"Species light requirement",3
+"352",4609,"Arenaria leptoclados",788,"Species light requirement",1
+"353",4614,"Arenaria serpyllifolia",788,"Species light requirement",2
+"354",5134,"Arrhenatherum elatius",788,"Species light requirement",2
+"355",5257,"Artemisia vulgaris",788,"Species light requirement",2
+"356",8453,"Bromus hordeaceus",788,"Species light requirement",3
+"357",8542,"Bromus sterilis",788,"Species light requirement",2
+"358",10226,"CAPSELLA BURSA-PASTORIS",788,"Species light requirement",4
+"359",11068,"Castanea sativa",788,"Species light requirement",1
+"360",11781,"Cerastium fontanum",788,"Species light requirement",1
+"361",11783,"Cerastium glomeratum",788,"Species light requirement",1
+"362",12159,"Chenopodium album",788,"Species light requirement",6
+"363",13016,"Cirsium arvense",788,"Species light requirement",1
+"364",14244,"Convolvulus arvensis",788,"Species light requirement",1
+"365",14280,"Erigeron canadensis",788,"Species light requirement",9
+"366",15174,"Crepis capillaris",788,"Species light requirement",2
+"367",16700,"Dactylis glomerata",788,"Species light requirement",3
+"368",20359,"Elymus repens",788,"Species light requirement",3
+"369",20816,"Epilobium ciliatum",788,"Species light requirement",1
+"370",20863,"Epilobium montanum",788,"Species light requirement",3
+"371",21900,"Erodium cicutarium",788,"Species light requirement",1
+"372",23444,"Euphorbia helioscopia",788,"Species light requirement",1
+"373",23920,"Fallopia convolvulus",788,"Species light requirement",4
+"374",24604,"Festuca rubra",788,"Species light requirement",2
+"375",25477,"Galinsoga parviflora",788,"Species light requirement",2
+"376",26069,"Geranium molle",788,"Species light requirement",1
+"377",28473,"Heracleum sphondylium",788,"Species light requirement",2
+"378",29305,"Holcus lanatus",788,"Species light requirement",5
+"379",30010,"Hypericum perforatum",788,"Species light requirement",4
+"380",30052,"Hypochaeris radicata",788,"Species light requirement",7
+"381",32132,"Lactuca serriola",788,"Species light requirement",2
+"382",32230,"Lamium amplexicaule",788,"Species light requirement",3
+"383",32357,"Lapsana communis",788,"Species light requirement",3
+"384",34017,"Lolium perenne",788,"Species light requirement",2
+"385",35671,"Matricaria chamomilla",788,"Species light requirement",1
+"386",35825,"Medicago lupulina",788,"Species light requirement",3
+"387",37495,"Myosotis arvensis",788,"Species light requirement",1
+"388",40152,"Papaver dubium",788,"Species light requirement",1
+"389",40195,"Papaver rhoeas",788,"Species light requirement",1
+"390",41191,"Persicaria lapathifolia",788,"Species light requirement",2
+"391",41193,"Persicaria maculosa",788,"Species light requirement",1
+"392",41542,"Phleum bertolonii",788,"Species light requirement",1
+"393",42541,"Plantago lanceolata",788,"Species light requirement",5
+"394",43221,"Polygonum aviculare",788,"Species light requirement",2
+"395",45737,"Ranunculus repens",788,"Species light requirement",3
+"396",45800,"Raphanus raphanistrum",788,"Species light requirement",2
+"397",47451,"Rumex acetosa",788,"Species light requirement",2
+"398",47452,"Rumex acetosella",788,"Species light requirement",4
+"399",47468,"Rumex crispus",788,"Species light requirement",7
+"400",47498,"Rumex obtusifolius",788,"Species light requirement",5
+"401",50427,"Sisymbrium officinale",788,"Species light requirement",2
+"402",50914,"Sonchus asper",788,"Species light requirement",4
+"403",50929,"Sonchus oleraceus",788,"Species light requirement",4
+"404",51244,"Spergula arvensis",788,"Species light requirement",2
+"405",54998,"Trifolium repens",788,"Species light requirement",3
+"406",55128,"Tripleurospermum inodorum",788,"Species light requirement",1
+"407",56236,"Veronica arvensis",788,"Species light requirement",5
+"408",56242,"Veronica chamaedrys",788,"Species light requirement",1
+"409",56268,"Veronica persica",788,"Species light requirement",2
+"410",56356,"Vicia cracca",788,"Species light requirement",1
+"411",56372,"Vicia hirsuta",788,"Species light requirement",2
+"412",56395,"Vicia sativa",788,"Species light requirement",1
+"413",56402,"Vicia tetrasperma",788,"Species light requirement",1
+"414",56491,"Viola arvensis",788,"Species light requirement",1
+"415",56829,"Vulpia bromoides",788,"Species light requirement",3
+"416",56838,"Vulpia myuros",788,"Species light requirement",2
+"417",235402,"Jacobaea vulgaris",788,"Species light requirement",2
+"418",269546,"Vicia sativa",788,"Species light requirement",1
+"419",447843,"Polygonum aviculare",788,"Species light requirement",1
+"420",909,"Achillea millefolium",2809,"Seedbank duration",300
+"421",1937,"Agrostis gigantea",2809,"Seedbank duration",23
+"422",3410,"Anagallis arvensis",2809,"Seedbank duration",190
+"423",3455,"Anchusa arvensis",2809,"Seedbank duration",9
+"424",4170,"APERA SPICA-VENTI",2809,"Seedbank duration",57
+"425",4187,"Aphanes australis",2809,"Seedbank duration",4
+"426",4341,"Arabidopsis thaliana",2809,"Seedbank duration",93
+"427",4609,"Arenaria leptoclados",2809,"Seedbank duration",4
+"428",4614,"Arenaria serpyllifolia",2809,"Seedbank duration",151
+"429",5134,"Arrhenatherum elatius",2809,"Seedbank duration",258
+"430",5257,"Artemisia vulgaris",2809,"Seedbank duration",73
+"431",8453,"Bromus hordeaceus",2809,"Seedbank duration",94
+"432",8542,"Bromus sterilis",2809,"Seedbank duration",51
+"433",10226,"CAPSELLA BURSA-PASTORIS",2809,"Seedbank duration",214
+"434",11068,"Castanea sativa",2809,"Seedbank duration",2
+"435",11781,"Cerastium fontanum",2809,"Seedbank duration",87
+"436",11783,"Cerastium glomeratum",2809,"Seedbank duration",18
+"437",12159,"Chenopodium album",2809,"Seedbank duration",306
+"438",13016,"Cirsium arvense",2809,"Seedbank duration",281
+"439",14244,"Convolvulus arvensis",2809,"Seedbank duration",111
+"440",14280,"Erigeron canadensis",2809,"Seedbank duration",120
+"441",15174,"Crepis capillaris",2809,"Seedbank duration",69
+"442",16700,"Dactylis glomerata",2809,"Seedbank duration",330
+"443",20359,"Elymus repens",2809,"Seedbank duration",255
+"444",20816,"Epilobium ciliatum",2809,"Seedbank duration",83
+"445",20863,"Epilobium montanum",2809,"Seedbank duration",46
+"446",21900,"Erodium cicutarium",2809,"Seedbank duration",30
+"447",23444,"Euphorbia helioscopia",2809,"Seedbank duration",34
+"448",23920,"Fallopia convolvulus",2809,"Seedbank duration",118
+"449",24604,"Festuca rubra",2809,"Seedbank duration",337
+"450",25477,"Galinsoga parviflora",2809,"Seedbank duration",4
+"451",26069,"Geranium molle",2809,"Seedbank duration",27
+"452",28473,"Heracleum sphondylium",2809,"Seedbank duration",89
+"453",29305,"Holcus lanatus",2809,"Seedbank duration",418
+"454",29306,"Holcus mollis",2809,"Seedbank duration",66
+"455",30010,"Hypericum perforatum",2809,"Seedbank duration",226
+"456",30052,"Hypochaeris radicata",2809,"Seedbank duration",88
+"457",32132,"Lactuca serriola",2809,"Seedbank duration",56
+"458",32230,"Lamium amplexicaule",2809,"Seedbank duration",31
+"459",32357,"Lapsana communis",2809,"Seedbank duration",53
+"460",34017,"Lolium perenne",2809,"Seedbank duration",177
+"461",35671,"Matricaria chamomilla",2809,"Seedbank duration",67
+"462",35825,"Medicago lupulina",2809,"Seedbank duration",181
+"463",37495,"Myosotis arvensis",2809,"Seedbank duration",145
+"464",40152,"Papaver dubium",2809,"Seedbank duration",27
+"465",40195,"Papaver rhoeas",2809,"Seedbank duration",67
+"466",41191,"Persicaria lapathifolia",2809,"Seedbank duration",47
+"467",41193,"Persicaria maculosa",2809,"Seedbank duration",110
+"468",42541,"Plantago lanceolata",2809,"Seedbank duration",346
+"469",43221,"Polygonum aviculare",2809,"Seedbank duration",193
+"470",45470,"Quercus robur",2809,"Seedbank duration",57
+"471",45737,"Ranunculus repens",2809,"Seedbank duration",416
+"472",45800,"Raphanus raphanistrum",2809,"Seedbank duration",36
+"473",47451,"Rumex acetosa",2809,"Seedbank duration",328
+"474",47452,"Rumex acetosella",2809,"Seedbank duration",200
+"475",47468,"Rumex crispus",2809,"Seedbank duration",148
+"476",47498,"Rumex obtusifolius",2809,"Seedbank duration",139
+"477",50427,"Sisymbrium officinale",2809,"Seedbank duration",20
+"478",50914,"Sonchus asper",2809,"Seedbank duration",110
+"479",50929,"Sonchus oleraceus",2809,"Seedbank duration",69
+"480",51244,"Spergula arvensis",2809,"Seedbank duration",51
+"481",51627,"Stellaria graminea",2809,"Seedbank duration",108
+"482",54945,"Trifolium dubium",2809,"Seedbank duration",90
+"483",54998,"Trifolium repens",2809,"Seedbank duration",372
+"484",55128,"Tripleurospermum inodorum",2809,"Seedbank duration",105
+"485",56236,"Veronica arvensis",2809,"Seedbank duration",179
+"486",56242,"Veronica chamaedrys",2809,"Seedbank duration",120
+"487",56268,"Veronica persica",2809,"Seedbank duration",103
+"488",56356,"Vicia cracca",2809,"Seedbank duration",232
+"489",56372,"Vicia hirsuta",2809,"Seedbank duration",108
+"490",56395,"Vicia sativa",2809,"Seedbank duration",65
+"491",56402,"Vicia tetrasperma",2809,"Seedbank duration",31
+"492",56491,"Viola arvensis",2809,"Seedbank duration",141
+"493",56829,"Vulpia bromoides",2809,"Seedbank duration",6
+"494",56838,"Vulpia myuros",2809,"Seedbank duration",11
+"495",235402,"Jacobaea vulgaris",2809,"Seedbank duration",83
+"496",269546,"Vicia sativa",2809,"Seedbank duration",71
+"497",909,"Achillea millefolium",NA,"",6274
+"498",1937,"Agrostis gigantea",NA,"",609
+"499",3410,"Anagallis arvensis",NA,"",3346
+"500",3455,"Anchusa arvensis",NA,"",291
+"501",4170,"APERA SPICA-VENTI",NA,"",1071
+"502",4187,"Aphanes australis",NA,"",81
+"503",4341,"Arabidopsis thaliana",NA,"",1834
+"504",4609,"Arenaria leptoclados",NA,"",96
+"505",4614,"Arenaria serpyllifolia",NA,"",3074
+"506",5134,"Arrhenatherum elatius",NA,"",5448
+"507",5257,"Artemisia vulgaris",NA,"",1434
+"508",8453,"Bromus hordeaceus",NA,"",2413
+"509",8542,"Bromus sterilis",NA,"",1210
+"510",10226,"CAPSELLA BURSA-PASTORIS",NA,"",4637
+"511",11068,"Castanea sativa",NA,"",141
+"512",11781,"Cerastium fontanum",NA,"",2374
+"513",11783,"Cerastium glomeratum",NA,"",655
+"514",12159,"Chenopodium album",NA,"",6147
+"515",13016,"Cirsium arvense",NA,"",5715
+"516",14244,"Convolvulus arvensis",NA,"",2497
+"517",14280,"Erigeron canadensis",NA,"",2450
+"518",15174,"Crepis capillaris",NA,"",1423
+"519",16700,"Dactylis glomerata",NA,"",7633
+"520",20359,"Elymus repens",NA,"",5305
+"521",20816,"Epilobium ciliatum",NA,"",1600
+"522",20863,"Epilobium montanum",NA,"",955
+"523",21900,"Erodium cicutarium",NA,"",915
+"524",23444,"Euphorbia helioscopia",NA,"",810
+"525",23920,"Fallopia convolvulus",NA,"",2592
+"526",24604,"Festuca rubra",NA,"",6898
+"527",25477,"Galinsoga parviflora",NA,"",195
+"528",26069,"Geranium molle",NA,"",732
+"529",28473,"Heracleum sphondylium",NA,"",2078
+"530",29305,"Holcus lanatus",NA,"",8023
+"531",29306,"Holcus mollis",NA,"",1299
+"532",30010,"Hypericum perforatum",NA,"",4604
+"533",30052,"Hypochaeris radicata",NA,"",2064
+"534",32132,"Lactuca serriola",NA,"",1490
+"535",32230,"Lamium amplexicaule",NA,"",704
+"536",32357,"Lapsana communis",NA,"",1078
+"537",34017,"Lolium perenne",NA,"",4221
+"538",35671,"Matricaria chamomilla",NA,"",1605
+"539",35825,"Medicago lupulina",NA,"",4046
+"540",37495,"Myosotis arvensis",NA,"",2515
+"541",40033,"Panicum miliaceum",NA,"",77
+"542",40152,"Papaver dubium",NA,"",1143
+"543",40195,"Papaver rhoeas",NA,"",1664
+"544",41191,"Persicaria lapathifolia",NA,"",1108
+"545",41193,"Persicaria maculosa",NA,"",2288
+"546",41542,"Phleum bertolonii",NA,"",27
+"547",42541,"Plantago lanceolata",NA,"",7558
+"548",43221,"Polygonum aviculare",NA,"",3721
+"549",44419,"Prunus sp",NA,"",14
+"550",45470,"Quercus robur",NA,"",1264
+"551",45737,"Ranunculus repens",NA,"",7685
+"552",45800,"Raphanus raphanistrum",NA,"",984
+"553",47451,"Rumex acetosa",NA,"",6624
+"554",47452,"Rumex acetosella",NA,"",3867
+"555",47468,"Rumex crispus",NA,"",3491
+"556",47498,"Rumex obtusifolius",NA,"",2915
+"557",50427,"Sisymbrium officinale",NA,"",564
+"558",50914,"Sonchus asper",NA,"",2448
+"559",50929,"Sonchus oleraceus",NA,"",1546
+"560",51244,"Spergula arvensis",NA,"",1415
+"561",51627,"Stellaria graminea",NA,"",2237
+"562",54945,"Trifolium dubium",NA,"",2045
+"563",54998,"Trifolium repens",NA,"",7982
+"564",55128,"Tripleurospermum inodorum",NA,"",2442
+"565",56236,"Veronica arvensis",NA,"",3567
+"566",56242,"Veronica chamaedrys",NA,"",2764
+"567",56268,"Veronica persica",NA,"",2006
+"568",56356,"Vicia cracca",NA,"",5042
+"569",56372,"Vicia hirsuta",NA,"",2544
+"570",56395,"Vicia sativa",NA,"",1837
+"571",56402,"Vicia tetrasperma",NA,"",954
+"572",56491,"Viola arvensis",NA,"",2832
+"573",56829,"Vulpia bromoides",NA,"",283
+"574",56838,"Vulpia myuros",NA,"",475
+"575",235402,"Jacobaea vulgaris",NA,"",1827
+"576",246865,"Papaver dubium",NA,"",19
+"577",269546,"Vicia sativa",NA,"",2173

@@ -1,0 +1,83 @@
+﻿£££ all traits
+> year_plot_all
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper rmse_mean
+1   0.1620703     0.17462 0.1683451     -205.0268      747.5673  271.2702
+
+> r2_year_plot
+[1] 0.1734492
+> rmse_year_plot
+[1] 40.01987
+
+
+£££ single trait group with year plot:
+> year_plot_seedmass
+[1] 0.0007887394 3.6887666136
+> year_plot_longevity
+[1] 0.02361402        Inf
+> year_plot_germination_rate
+[1] 6.856766e-05 4.318928e+75
+> year_plot_temperature
+[1] 2.533126e-03 2.259306e+22
+> year_plot_seedbank_duration
+[1] 7.450419e-04 5.709689e+32
+
+
+£££ 2 traits with year plot:
+> year_plot_sm_l
+[1]  1.195694e-01 2.233174e+123
+> year_plot_sm_gr
+[1] 7.363230e-02 4.994716e+23
+> year_plot_sm_t
+[1] 1.112512e-01 5.317180e+04
+> year_plot_sm_sd
+[1] 1.154344e-01 5.985007e+09
+> year_plot_l_gr
+[1] 7.161160e-02 4.196484e+15
+> year_plot_l_t
+[1]  6.005525e-02 3.253041e+117
+> year_plot_l_sd
+[1] 0.08333635        Inf
+> year_plot_gr_t
+[1] 9.792476e-02 5.684434e+14
+> year_plot_gr_sd
+[1] 1.245340e-01 1.092754e+25
+> year_plot_t_sd
+[1] 0.1494751 3.2247044
+
+
+£££ 3 traits with year plot group:
+> year_plot_sm_l_gr
+[1] 7.082681e-02 3.869430e+15
+> year_plot_sm_l_t
+[1]  5.979069e-02 8.228693e+117
+> year_plot_sm_l_sd
+[1] 0.08302923        Inf
+> year_plot_sm_gr_t
+[1] 9.758085e-02 5.582476e+14
+> year_plot_sm_gr_sd
+[1] 1.246154e-01 3.279592e+24
+> year_plot_sm_t_sd
+[1] 0.1515287 4.1342150
+> year_plot_l_gr_t
+[1] 8.960362e-02 6.537935e+12
+> year_plot_l_gr_sd
+[1] 1.182768e-01 1.594810e+24
+> year_plot_l_t_sd
+[1]  0.1706932 10.3110570
+> year_plot_gr_t_sd
+[1] 1.630497e-01 1.272027e+05
+
+£££ 4 trait with year plot group:
+> year_plot_sm_l_gr_t
+[1] 8.962246e-02 6.856046e+12
+> year_plot_sm_l_gr_sd
+[1] 1.205553e-01 5.333615e+24
+> year_plot_sm_l_t_sd
+[1]  0.1703345 12.8755369
+> year_plot_sm_gr_t_sd
+[1] 1.641653e-01 8.257866e+04
+> year_plot_l_gr_t_sd
+[1]   0.167412 488.943238
+
+
+

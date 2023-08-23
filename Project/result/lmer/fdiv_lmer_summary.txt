@@ -1,0 +1,30 @@
+Linear mixed model fit by REML ['lmerMod']
+Formula: fdiv[, 2] ~ month + (1 | block) + (1 | year)
+   Data: rel_abun
+
+REML criterion at convergence: -70.2
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.6155 -0.5756  0.2028  0.6790  1.9154 
+
+Random effects:
+ Groups   Name        Variance  Std.Dev. 
+ year     (Intercept) 5.745e-04 2.397e-02
+ block    (Intercept) 9.933e-18 3.152e-09
+ Residual             1.420e-02 1.191e-01
+Number of obs: 60, groups:  year, 5; block, 4
+
+Fixed effects:
+             Estimate Std. Error t value
+(Intercept)   0.79840    0.02872  27.802
+monthmay     -0.07090    0.03768  -1.882
+monthoctober -0.21254    0.03768  -5.641
+
+Correlation of Fixed Effects:
+            (Intr) mnthmy
+monthmay    -0.656       
+monthoctobr -0.656  0.500
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+

@@ -1,0 +1,84 @@
+﻿£££ all traits 
+> month_plot_all
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper  rmse_mean
+1   0.2576767    0.270784 0.2642304    0.00956456   0.009704401 0.00963448
+
+
+
+> r2_month_plot
+[1] 0.2660659
+> rmse_month_plot
+[1] 0.009636362
+
+
+£££ single trait group with month plot:
+> month_plot_sm
+[1] 0.0008324855 0.0094663352
+> month_plot_l
+[1] 1.301088e-02 9.693257e+55
+> month_plot_gr
+[1] 1.489280e-04 2.127091e+33
+> month_plot_t
+[1] 3.657471e-03 1.478363e+11
+> month_plot_sd
+[1] 9.282563e-04 2.369100e+12
+
+
+£££ 2 traits with month plot:
+> month_plot_sm_l
+[1] 0.212429095 0.009631408
+> month_plot_sm_gr
+[1] 0.216963390 0.009630996
+> month_plot_sm_t
+[1] 0.227818302 0.009631814
+> month_plot_sm_sd
+[1] 0.265229579 0.009628096
+> month_plot_l_gr
+[1] 0.215565703 0.009633857
+> month_plot_l_t
+[1] 0.263821668 0.009631914
+> month_plot_l_sd
+[1] 0.264076893 0.009629535
+> month_plot_gr_t
+[1] 0.265360849 0.009630727
+> month_plot_gr_sd
+[1] 0.264569454 0.009630443
+> month_plot_t_sd
+[1] 0.264466188 0.009632624
+
+
+£££ 3 traits with month plot group:
+> month_plot_sm_l_gr
+[1] 0.215657478 0.009633771
+> month_plot_sm_l_t
+[1] 0.263823093 0.009631967
+> month_plot_sm_l_sd
+[1] 0.264084094 0.009629698
+> month_plot_sm_gr_l
+[1] 0.265357277 0.009630786
+> month_plot_sm_gr_sd
+[1] 0.264560605 0.009630576
+> month_plot_sm_t_sd
+[1] 0.264457672 0.009632765
+> month_plot_l_gr_t
+[1] 0.264197214 0.009634158
+> month_plot_l_gr_sd
+[1] 0.264027492 0.009631445
+> month_plot_l_t_sd
+[1] 0.264185458 0.009633589
+> month_plot_gr_t_sd
+[1] 0.264388748 0.009633772
+
+
+£££ 4 trait with month plot group:
+> month_plot_no_sm
+[1] 0.264228949 0.009634406
+> month_plot_no_l
+[1] 0.264386816 0.009633871
+> month_plot_no_gr
+[1] 0.264188835 0.009633693
+> month_plot_no_t
+[1] 0.264031598 0.009631548
+> month_plot_no_sd
+[1] 0.264197109 0.009634186
+

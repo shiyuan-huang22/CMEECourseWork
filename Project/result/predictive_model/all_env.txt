@@ -1,0 +1,169 @@
+﻿£££ all traits
+> month_year_plot_all
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper rmse_mean
+1   0.1620834    0.174631 0.1683572     -205.4695      749.0831  271.8068
+
+> r2_year_month_plot
+[1] 0.1683572
+> rmse_year_month_plot
+[1] 271.8068
+
+
+£££ single trait group:
+> r2_seedmass_with_all_env
+[1] 0.0007889097
+> rmse_seedmass_with_all_env
+[1] 3.647
+
+> r2_longevity_with_all_env
+[1] 0.02361566
+> rmse_longevity_with_all_env
+[1] Inf
+
+> r2_germination_rate_with_all_env
+[1] 6.857273e-05
+> rmse_germination_rate_with_all_env
+[1] 4.225332e+75
+
+> r2_germination_temperature_with_all_env
+[1] 0.002534507
+> rmse_germination_temperature_with_all_env
+[1] 2.247931e+22
+
+> r2_seedbank_duration_with_all_env
+[1] 0.000744875
+> rmse_seedbank_duration_with_all_env
+[1] 5.648794e+32
+
+
+
+£££ 2 traits with all env:
+> r2_seedmass_longevity_with_all_env
+[1] 0.1195742
+> rmse_seedmass_longevity_with_all_env
+[1] 2.144848e+123
+
+> r2_seedmass_germination_rate_with_all_env
+[1] 0.07364881
+> rmse_seedmass_germination_rate_with_all_env
+[1] 4.844241e+23
+
+> r2_seedmass_temperature_with_all_env
+[1] 0.1112555
+> rmse_seedmass_temperature_with_all_env
+[1] 53098.98
+
+> r2_seedmass_ seedbank_duration_with_all_env
+[1] 0.1154409
+> rmse_seedmass_ seedbank_duration_with_all_env
+[1] 5953325396
+
+> r2_longevity_germination_rate_with_all_env
+[1] 0.07161911
+> rmse_longevity_germination_rate_with_all_env
+[1] 4.182489e+15
+
+> r2_longevity_temperature_with_all_env
+[1] 0.06003691
+> rmse_longevity_temperature_with_all_env
+[1] 2.900379e+117
+
+> r2_longevity_seedbank_duration_with_all_env
+[1] 0.08335079
+> rmse_longevity_seedbank_duration_with_all_env
+[1] Inf
+
+> r2_germination_rate_temperature_with_all_env
+[1] 0.09794453
+> rmse_germination_rate_temperature_with_all_env
+[1] 5.605277e+14
+
+> r2_germination_rate_seedbank_duration_with_all_env
+[1] 0.1245403
+> rmse_germination_rate_seedbank_duration_with_all_env
+[1] 1.077446e+25
+
+> r2_temperature_seedbank_duration_with_all_env
+[1] 0.1494773
+> rmse_temperature_seedbank_duration_with_all_env
+[1] 3.215671
+
+
+
+£££ 3 traits with all env group:
+> r2_seedmass_longevity_germination_rate_with_all_env
+[1] 0.0708383
+> rmse_seedmass_longevity_germination_rate_with_all_env
+[1] 3.856803e+15
+
+> r2_seedmass_longevity_temperature_with_all_env
+[1] 0.05977707
+> rmse_seedmass_longevity_temperature_with_all_env
+[1] 7.334768e+117
+
+> r2_seedmass_longevity_seedbank_duration_with_all_env
+[1] 0.08322963
+> rmse_seedmass_longevity_seedbank_duration_with_all_env
+[1] Inf
+
+> r2_seedmass_germination_rate_temperature_with_all_env
+[1] 0.0976018
+> rmse_seedmass_germination_rate_temperature_with_all_env
+[1] 5.502797e+14
+
+> r2_seedmass_germination_rate_seedbank_duration_with_all_env
+[1] 0.1246222
+> rmse_seedmass_germination_rate_seedbank_duration_with_all_env
+[1] 3.23675e+24
+
+> r2_seedmass_temperature_seedbank_duration_with_all_env
+[1] 0.151531
+> rmse_seedmass_temperature_seedbank_duration_with_all_env
+[1] 4.12207
+
+> r2_longevity_germination_rate_temperature_with_all_env
+[1] 0.08962405
+> rmse_longevity_germination_rate_temperature_with_all_env
+[1] 6.49986e+12
+
+> r2_longevity_germination_rate_seedbank_duration_with_all_env
+[1] 0.1182922
+> rmse_longevity_germination_rate_seedbank_duration_with_all_env
+[1] 1.56666e+24
+
+> r2_longevity_temperature_seedbank_duration_with_all_env
+[1] 0.1707129
+> rmse_longevity_temperature_seedbank_duration_with_all_env
+[1] 10.27362
+
+> r2_germination_rate_temperature_seedbank_duration_with_all_env
+[1] 0.1630764
+> rmse_germination_rate_temperature_seedbank_duration_with_all_env
+[1] 126754.7
+
+
+£££ 4 traits with all env group:
+> r2_no_seedmass_all_env
+[1] 0.1674207
+> rmse_no_seedmass_all_env
+[1] 489.5773
+
+> r2_no_longevity_all_env
+[1] 0.16419
+> rmse_no_longevity_all_env
+[1] 82315.63
+
+> r2_no_germination_rate_all_env
+[1] 0.1703624
+> rmse_no_germination_rate_all_env
+[1] 12.81737
+
+> r2_no_temperature_all_env
+[1] 0.1205739
+> rmse_no_temperature_all_env
+[1] 5.233167e+24
+
+> r2_no_seedbank_duration_all_env
+[1] 0.08964272
+> rmse_no_seedbank_duration_all_env
+[1] 6.814752e+12

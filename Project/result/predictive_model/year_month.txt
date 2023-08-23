@@ -1,0 +1,109 @@
+﻿
+£££ all traits
+> year_month_all
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper  rmse_mean
+1   0.3153804   0.3301238 0.3227521   0.009665446    0.01041586 0.01004065
+
+
+£££ single trait group with year month:
+> year_month_sm
+   r2_ci_lower  r2_ci_upper      r2_mean rmse_ci_lower rmse_ci_upper   rmse_mean
+1 0.0005941327 0.0007720451 0.0006830889   0.009437903   0.009567967 0.009502935
+> year_month_l
+  r2_ci_lower r2_ci_upper    r2_mean  rmse_ci_lower rmse_ci_upper     rmse_mean
+1  0.04565699  0.05181713 0.04873706 -2.979263e+101 1.846779e+102 7.744263e+101
+> year_month_gr
+   r2_ci_lower  r2_ci_upper      r2_mean rmse_ci_lower rmse_ci_upper    rmse_mean
+1 8.306026e-05 8.930851e-05 8.618439e-05 -5.067871e+56  8.217612e+57 3.855412e+57
+> year_month_t
+  r2_ci_lower r2_ci_upper     r2_mean rmse_ci_lower rmse_ci_upper rmse_mean
+1 0.001841745 0.004228039 0.003034892    -384387939    1587094615 601353338
+> year_month_sd
+   r2_ci_lower  r2_ci_upper    r2_mean rmse_ci_lower rmse_ci_upper    rmse_mean
+1 0.0001289644 0.0006991556 0.00041406  1.186047e+17  8.572677e+18 4.345641e+18
+
+
+
+£££ 2 traits with year month group:
+> year_month_sm_l
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper  rmse_mean
+1   0.2987876   0.3114917 0.3051397   -1183441332    7301151455 3058855061
+> year_month_sm_gr
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper   rmse_mean
+1   0.2803984   0.2932514 0.2868249 -1.436498e+14  2.488271e+15 1.17231e+15
+> year_month_sm_t
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper  rmse_mean
+1   0.2645367   0.2760386 0.2702876   -0.06186653     0.2300023 0.08406789
+> year_month_sm_sd
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper  rmse_mean
+1   0.3404088   0.3550468 0.3477278    0.01031783    0.02420642 0.01726213
+> year_month_l_gr
+  r2_ci_lower r2_ci_upper r2_mean rmse_ci_lower rmse_ci_upper rmse_mean
+1   0.2830908   0.2962891 0.28969     -376274.3       6366739   2995232
+> year_month_l_t
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper rmse_mean
+1   0.3334936   0.3480077 0.3407506     -2.422486      7.502623  2.540069
+> year_month_l_sd
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper   rmse_mean
+1   0.3511552   0.3658807 0.3585179    0.00966004    0.00998687 0.009823455
+> year_month_gr_t
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper rmse_mean
+1   0.3184528   0.3328823 0.3256676     -2.454107      8.472298  3.009095
+> year_month_gr_sd
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper    rmse_mean
+1   0.3347589   0.3495199 0.3421394 -1.867611e+19  5.749001e+19 1.940695e+19
+> year_month_t_sd
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper   rmse_mean
+1   0.3178401    0.332375 0.3251076   0.009605426    0.00979318 0.009699303
+
+
+£££ 3 traits with year month group:
+> year_month_sm_l_gr
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper rmse_mean
+1   0.2831884   0.2963898 0.2897891     -402090.7       6813022   3205466
+> year_month_sm_l_t
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper rmse_mean
+1   0.3334691   0.3479841 0.3407266      -2.56789      7.950081  2.691095
+> year_month_sm_l_sd
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper   rmse_mean
+1    0.351444   0.3661143 0.3587791   0.009678934     0.0099895 0.009834217
+> year_month_sm_gr_t
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper rmse_mean
+1   0.3184187   0.3328498 0.3256342     -2.333605      7.986831  2.826613
+> year_month_sm_gr_sd
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper    rmse_mean
+1   0.3344556   0.3492233 0.3418394  -4.39061e+19  1.351546e+20 4.562425e+19
+> year_month_sm_t_sd
+  r2_ci_lower r2_ci_upper r2_mean rmse_ci_lower rmse_ci_upper   rmse_mean
+1   0.3177729   0.3323071 0.32504   0.009604238   0.009792618 0.009698428
+> year_month_l_gr_t
+  r2_ci_lower r2_ci_upper  r2_mean rmse_ci_lower rmse_ci_upper rmse_mean
+1   0.3156718   0.3304521 0.323062      -1.79154      36.81389  17.51118
+> year_month_l_gr_sd
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper   rmse_mean
+1   0.3229128   0.3373526 0.3301327   0.009589555   0.009774876 0.009682215
+> year_month_l_t_sd
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper   rmse_mean
+1   0.3172593   0.3318523 0.3245558   0.009606746   0.009794833 0.009700789
+> year_month_gr_t_sd
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper  rmse_mean
+1   0.3160232   0.3306593 0.3233413   0.004382345     0.1689851 0.08668373
+
+
+£££ 4 trait with year month group:
+> year_month_sm_l_gr_t
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper rmse_mean
+1   0.3156607   0.3304412 0.3230509     -1.940306      39.76386  18.91178
+> year_month_sm_l_gr_sd
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper   rmse_mean
+1   0.3228455    0.337286 0.3300658   0.009588829   0.009774601 0.009681715
+> year_month_sm_l_t_sd
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper   rmse_mean
+1   0.3172038   0.3317977 0.3245007   0.009608636   0.009796445 0.009702541
+> year_month_sm_gr_t_sd
+  r2_ci_lower r2_ci_upper  r2_mean rmse_ci_lower rmse_ci_upper  rmse_mean
+1       0.316   0.3306359 0.323318   0.005979528     0.1247685 0.06537404
+> year_month_l_gr_t_sd
+  r2_ci_lower r2_ci_upper   r2_mean rmse_ci_lower rmse_ci_upper  rmse_mean
+1   0.3153961   0.3301434 0.3227697   0.009653782    0.01118025 0.01041702
+

@@ -1,0 +1,20 @@
+$emmeans
+ month   emmean      SE   df lower.CL upper.CL
+ march   -0.155 0.00165 7.17   -0.159   -0.151
+ may     -0.154 0.00165 7.17   -0.158   -0.150
+ october -0.151 0.00165 7.17   -0.155   -0.147
+
+Degrees-of-freedom method: satterthwaite 
+Results are given on the [ (not the response) scale. 
+Confidence level used: 0.95 
+
+$contrasts
+ contrast         estimate      SE df t.ratio p.value
+ march - may     -0.000957 0.00145 53  -0.660  0.7873
+ march - october -0.003998 0.00145 53  -2.758  0.0214
+ may - october   -0.003041 0.00145 53  -2.097  0.1001
+
+Note: contrasts are still on the [ scale 
+Degrees-of-freedom method: satterthwaite 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+
