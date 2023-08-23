@@ -3,11 +3,11 @@
 # Script: CompileReport.sh
 # Description: Bash script to compile LaTeX, and save pdf output to results
 
-pdflatex Shiyuan_CMEE_MSc_02250317.tex
-bibtex Shiyuan_CMEE_MSc_02250317
-pdflatex Shiyuan_CMEE_MSc_02250317.tex
-pdflatex Shiyuan_CMEE_MSc_02250317.tex
-evince Shiyuan_CMEE_MSc_02250317.pdf &
+pdflatex Huang_CMEE_MSc_02250317.tex
+bibtex Huang_CMEE_MSc_02250317
+pdflatex Huang_CMEE_MSc_02250317.tex
+pdflatex Huang_CMEE_MSc_02250317.tex
+evince Huang_CMEE_MSc_02250317.pdf &
 
 
 
